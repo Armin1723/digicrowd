@@ -1,10 +1,24 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import AnimatedHamburger from "./AnimatedHamburger";
 
 const Header = () => {
+
   return (
-    <div className="absolute top-5 left-1/2 -translate-x-1/2 bg-white rounded-full z-[99] font-['inter']">
+    <div className="absolute top-5 left-1/2 -translate-x-1/2 rounded-full z-[98] font-['inter'] flex justify-between items-center w-full px-12 max-lg:px-6">
+      <Link to="/" className="logo">
+        <img
+          src="/assets/logo-small.png"
+          alt="logo"
+          className="h-10 w-10 md:h-14 md:w-14"
+        />
+      </Link>
       <SlideTabs />
+
+    <div className="hamburger md:hidden">
+      <AnimatedHamburger />
+    </div>
     </div>
   );
 };
@@ -24,13 +38,13 @@ const SlideTabs = () => {
           opacity: 0,
         }));
       }}
-      className="relative mx-auto flex w-fit rounded-full border-2 border-black !bg-white p-1 z-[20]"
+      className="relative mx-auto max-lg:hidden flex w-fit items-center rounded-full border-2 border-black !bg-white p-1 z-[97]"
     >
+      <Tab setPosition={setPosition}>Home</Tab>
       <Tab setPosition={setPosition}>About Us</Tab>
-      <Tab setPosition={setPosition}>Pricing</Tab>
-      <Tab setPosition={setPosition}>Features</Tab>
-      <Tab setPosition={setPosition}>Docs</Tab>
-      <Tab setPosition={setPosition}>Blog</Tab>
+      <Tab setPosition={setPosition}>Services</Tab>
+      <Tab setPosition={setPosition}>Blogs</Tab>
+      <Tab setPosition={setPosition}>Contact Us</Tab>
 
       <Cursor position={position} />
     </ul>
@@ -54,7 +68,7 @@ const Tab = ({ children, setPosition }) => {
           opacity: 1,
         });
       }}
-      className="relative block cursor-pointer px-3 py-1 text-xs uppercase text-white mix-blend-difference md:px-5 md:py-2 md:text-base z-[20]"
+      className="relative block cursor-pointer px-3 py-1 text-xs uppercase text-white mix-blend-difference md:px-5 md:py-2 md:text-base z-[97] font-wix"
     >
       {children}
     </li>
