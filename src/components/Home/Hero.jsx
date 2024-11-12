@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useRef } from "react";
+import Reveal from "../shared/Reveal";
 
 const Hero = () => {
   const containerRef = useRef(null);
@@ -42,32 +43,58 @@ const Hero = () => {
         })}
       </div>
 
-      <div className="content z-[30] flex w-[90%] mb-8 ">
-
-        <div className="flex flex-col justify-end w-1/2 gap-6 max-lg:w-full left description">
-          <p className="font-wix font-bold text-[4rem] leading-[4rem] drop-shadow-md font-dark-blue">
+      <div className="content z-[30] flex w-full md:pl-[5%]  max-sm:px-6">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.7, ease: "easeIn", delay: 0.4 }}
+          className="flex flex-col justify-end w-1/2 gap-6 max-lg:w-full left description mb-12"
+        >
+          <p className="font-wix font-bold text-[4rem] leading-[4rem] max-sm:text-[2.75rem] max-sm:leading-[2.75rem] drop-shadow-md font-dark-blue">
             Custom Solutions from Best{" "}
-            <span className="text-blue-500">Digital Marketing Agency.</span>
+            <span className="text-blue-500 ">Digital Marketing Agency.</span>
           </p>
-          <p className="font-wix font-medium  text-lg">
+          <motion.p
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1 }}
+            className="font-wix font-medium text-lg max-lg:text-base"
+          >
             Digicrowd Solution, the premier digital marketing company, offers
             custom-made solutions tailored to align with your business's unique
             needs and objectives, ensuring your brand stands out in the digital
             realm. Heighten your online presence with our expertise, propelling
             impactful results.
-          </p>
-          <div className="actions flex gap-2">
-            <button className="border-2 bg-blue-500 border-accent-dark text-accent-light px-6 py-2 rounded-full hover:bg-blue-500 hover:text-white transition-all duration-300">
-              Get Started
-            </button>
-            <button className="border-2 border-blue-500 text-blue-500 px-6 py-2 rounded-full hover:bg-blue-300 hover:text-white transition-all duration-300">
-              Contact Us
-            </button>
+          </motion.p>
+          <div className="button-container flex items-center gap-4">
+            <motion.button
+              initial={{ scale: 0, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.3, delay: 1 }}
+              className="button bg-accent text-white"
+            >
+              Book Demo
+            </motion.button>
+            <motion.button
+              initial={{ scale: 0, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.3, delay: 1 }}
+              className="button text-accent"
+            >
+              Request a Call
+            </motion.button>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="graphic w-1/2 max-lg:hidden max-h-screen flex justify-end">
-          <img src="/assets/hero-image.webp" alt="hero-graphic" className="object-cover"/>
+        <div className="graphic w-1/2 max-lg:hidden max-h-screen flex bg-transparent mb-8">
+          <motion.img
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            src="/assets/home-illustration.svg"
+            alt="hero-graphic"
+            className="object-cover"
+          />
         </div>
       </div>
     </div>

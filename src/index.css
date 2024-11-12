@@ -4,6 +4,42 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+    --accent-light: #e2e8f0;
+    --accent-dark: #cbd4e0;
+    --dark-blue: #0e162a;
+    --accent: #ff5d4d
+}
+
 /* .mask-gradient{
     mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) , #000 30%, #000 70%, rgba(0, 0, 0, 0));
 } */
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 2px;
+    background-color: var(--accent-light);
+}   
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--dark-blue);
+    border-radius: 10px;
+    border: 2px solid var(--dark-blue);
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background-color: var(--accent-light);
+}
+
+*{
+    @apply custom-scrollbar;
+}
+
+
+/* Button Styles */
+.button{
+    @apply  px-4 py-1 rounded-md hover:text-white transition-all duration-300 border-2 border-accent hover:bg-accent/80
+}
+
+.heading{
+    @apply text-6xl max-sm:text-3xl font-bold font-wix;
+}
