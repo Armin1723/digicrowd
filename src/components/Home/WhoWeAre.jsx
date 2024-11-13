@@ -28,24 +28,40 @@ const WhoWeAre = () => {
         </div>
 
         <div className="icons flex max-sm:flex-col gap-4 my-8 w-4/5 max-sm:w-full max-sm:px-4 justify-between font-wix items-center max-sm:items-start">
-            <div className="icon-1 flex  gap-2 items-center">
-                <img src='/assets/who-we-are-icon-1.webp' alt='graphic' className="border-2 rounded-md border-black/60 w-20 h-20 " />
-                <div className="flex flex-col">
-                    <p className="font-bold text-3xl font-wix"><CountUpNumber to={1500} suffix={'+'}/></p>
-                    <p>Clients Worldwide.</p>
-                </div>
+          <div className="icon-1 flex  gap-2 items-center">
+            <img
+              src="/assets/who-we-are-icon-1.webp"
+              alt="graphic"
+              className="border-2 rounded-md border-black/60 w-20 h-20 "
+            />
+            <div className="flex flex-col">
+              <div className="font-bold text-3xl font-wix">
+                <CountUpNumber to={1500} suffix={"+"} />
+              </div>
+              <p>Clients Worldwide.</p>
             </div>
-            <div className="divider border border-black h-20 max-sm:hidden"></div>
-            <div className="icon-2 flex gap-2 items-center">
-                <img src='/assets/who-we-are-icon-2.webp' alt='graphic' className="border-2 rounded-md border-black/60 w-20 h-20" />
-                <div className="flex flex-col ">
-                    <p className="font-bold text-3xl font-wix"><CountUpNumber to={90} suffix={'%'}/></p>
-                    <p>Customer Retention.</p>
-                </div>
+          </div>
+          <div className="divider border border-black h-20 max-sm:hidden"></div>
+          <div className="icon-2 flex gap-2 items-center">
+            <img
+              src="/assets/who-we-are-icon-2.webp"
+              alt="graphic"
+              className="border-2 rounded-md border-black/60 w-20 h-20"
+            />
+            <div className="flex flex-col ">
+              <div className="font-bold text-3xl font-wix">
+                <CountUpNumber to={90} suffix={"%"} />
+              </div>
+              <p>Customer Retention.</p>
             </div>
+          </div>
         </div>
 
-        <div className="button-container flex w-4/5 items-start"><button className="rounded-lg px-6 py-2 text-lg font-bold font-wix text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300" >Read More</button></div>
+        <div className="button-container flex w-4/5 items-start">
+          <button className="rounded-lg px-6 py-2 text-lg font-bold font-wix text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300">
+            Read More
+          </button>
+        </div>
       </div>
 
       <div className="graphics w-1/2 max-lg:w-full max-lg:mt-4 h-full">

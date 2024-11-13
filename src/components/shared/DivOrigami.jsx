@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const DivOrigami = () => {
   return (
-    <section className="flex h-60 flex-col items-center justify-center gap-12 px-4 py-12 md:flex-row ">
+    <section className="flex h-60 max-sm:scale-75 flex-col items-center justify-center gap-12 px-4 py-12 md:flex-row ">
       <LogoRolodex
         items={[
           <LogoItem key={1} className="bg-gray-100 text-white">

@@ -4,6 +4,7 @@ import Header from "../components/shared/Header";
 import WhoWeAre from "../components/Home/WhoWeAre";
 import OurCertificates from "../components/Home/OurCertificates";
 import OurServices from "../components/Home/OurServices";
+import ServicePages from "../components/Home/ServicePages";
 
 const Home = () => {
   return (
@@ -13,6 +14,8 @@ const Home = () => {
       <WhoWeAre />
       <OurCertificates />
       <OurServices />
+      <ServicePages />
+      <div className="h-screen"></div>
     </div>
   );
 };

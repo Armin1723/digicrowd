@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import FlipLink from "./FlipLink";
 import AnimatedHamburger from "./AnimatedHamburger";
+import { useMotionValueEvent, useScroll } from "framer-motion";
 
 const Header = () => {
   const Links = [
@@ -27,27 +28,39 @@ const Header = () => {
     },
   ];
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const header = document.getElementById("header");
-  //     if (window.scrollY > 30) {
-  //       header.classList.add("bg-opacity-100");
-  //       header.classList.add("border-b");
-  //     } else {
-  //       header.classList.remove("bg-opacity-100");
-  //       header.classList.remove("border-b");
-  //     }
-  //   };
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, 'change', (latest) => {
+    const previous = scrollY.getPrevious();
+    const header = document.getElementById("header");
+    if(latest > previous && latest > 250){
+      header.classList.add("-translate-y-full");
+    }else{
+      header.classList.remove("-translate-y-full");
+    }
+  });
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.getElementById("header");
+      if (window.scrollY > 30) {
+        header.classList.add("border-b");
+        header.classList.add("bg-white");
+      } else {
+        header.classList.remove("border-b");
+        header.classList.remove("bg-white");
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div
       id="header"
-      className="fixed top-0 w-full flex justify-between items-center z-[98] bg-white p-4 px-12 max-lg:px-8 max-sm:px-4 bg-opacity0 border-b shadow-xl transition-all duration-300"
+      className="fixed top-0 w-full overflow-hidden -translate-y-fll flex justify-between items-center z-[98] bg-whte p-4 px-12 max-lg:px-8 max-sm:px-4 bg-opacity0 transition-all duration-300"
     >
       <Link to="/" className="logo">
         <img src="/assets/logo.webp" alt="logo" className="object-cover max-lg:w-3/4" />

@@ -50,7 +50,7 @@ const Hero = () => {
           transition={{ duration: 0.7, ease: "easeIn", delay: 0.4 }}
           className="flex flex-col justify-end w-1/2 gap-6 max-lg:w-full left description mb-12"
         >
-          <p className="font-wix font-bold text-[4rem] leading-[4rem] max-sm:text-[2.75rem] max-sm:leading-[2.75rem] drop-shadow-md font-dark-blue">
+          <p className="text-shadow font-wix font-bold text-[4rem] leading-[4rem] max-sm:text-[2.75rem] max-sm:leading-[2.75rem] drop-shadow-md font-dark-blue">
             Custom Solutions from Best{" "}
             <span className="text-blue-500 ">Digital Marketing Agency.</span>
           </p>
@@ -58,7 +58,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1 }}
-            className="font-wix font-medium text-lg max-lg:text-base"
+            className="font-wix font-medium text-lg max-lg:text-base "
           >
             Digicrowd Solution, the premier digital marketing company, offers
             custom-made solutions tailored to align with your business's unique
@@ -71,7 +71,7 @@ const Hero = () => {
               initial={{ scale: 0, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.3, delay: 1 }}
-              className="button bg-accent text-white"
+              className="bg-accent button text-white text-shadow" 
             >
               Book Demo
             </motion.button>
