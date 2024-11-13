@@ -5,6 +5,9 @@ import WhoWeAre from "../components/Home/WhoWeAre";
 import OurCertificates from "../components/Home/OurCertificates";
 import OurServices from "../components/Home/OurServices";
 import ServicePages from "../components/Home/ServicePages";
+import OurClients from "../components/Home/OurClients";
+import CTA from "../components/Home/CTA";
+import Features from "../components/Home/Features";
 
 const Home = () => {
   return (
@@ -15,7 +18,10 @@ const Home = () => {
       <OurCertificates />
       <OurServices />
       <ServicePages />
-      <div className="h-screen"></div>
+      <OurClients />
+      <CTA />
+      <Features />
+      <div className="h-dvh"></div>
     </div>
   );
 };

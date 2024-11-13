@@ -3,17 +3,20 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const DivOrigami = () => {
   return (
-    <section className="flex h-60 max-sm:scale-75 flex-col items-center justify-center gap-12 px-4 py-12 md:flex-row ">
+    <section className="flex h-60 max-lg:h-48 max-sm:scale-75 flex-col items-center justify-center gap-12 px-4 py-12 max-lg:py-6 md:flex-row ">
       <LogoRolodex
         items={[
-          <LogoItem key={1} className="bg-gray-100 text-white">
+          <LogoItem key={1} className="bg-accent-light text-white">
             <img src="/assets/google-analytics.webp" alt='logo' />
           </LogoItem>,
-          <LogoItem key={2} className="bg-gray-100 text-white">
+          <LogoItem key={2} className="bg-accent-dark text-white">
             <img src="/assets/adwards.webp" alt='logo' />
           </LogoItem>,
-          <LogoItem key={3} className="bg-gray-100 text-white">
+          <LogoItem key={3} className="bg-accent-light text-white">
             <img src="/assets/bing.webp" alt='logo' />
+          </LogoItem>,
+          <LogoItem key={3} className="bg-accent-dark text-white">
+            <img src="/assets/adsense.webp" alt='logo' />
           </LogoItem>,
         ]}
       />
@@ -44,7 +47,7 @@ const LogoRolodex = ({ items }) => {
         transform: "rotateY(-20deg)",
         transformStyle: "preserve-3d",
       }}
-      className="relative z-0 h-44 w-60 shrink-0 rounded-xl border border-neutral-700 bg-white shadow-[10px_10px_25px_gray] shadow-gray-500"
+      className="relative z-0 h-44 w-60 shrink-0 rounded-xl border border-neutral-700 bg-white shadow-[3px_10px_35px_gray] shadow-accent-dark"
     >
       <AnimatePresence mode="sync">
         <motion.div

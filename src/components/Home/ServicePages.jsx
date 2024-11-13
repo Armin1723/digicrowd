@@ -136,8 +136,8 @@ const ServicePages = () => {
             animate={animationControls}
             transition={{ duration: 0.4, delay: 0.5 }}
             key={`${index}${card.title}`}
-            className={`flex max-lg:flex-col items-center justify-around gap-6 w-full px-[15%] max-lg:px-10 ${
-              index % 2 === 0 ? "bg-white flex-row" : "bg-accent-light flex-row-reverse"
+            className={`flex max-lg:flex-col items-center justify-around gap-6 w-full px-[15%] max-lg:px-10 border-b ${
+              index % 2 === 0 ? "bg-accent-light flex-row" : "bg-white flex-row-reverse"
             } border-black py-20 max-lg:py-12 max-sm:py-8 ${index < cardsData.length - 1 && "border-b"}`}
           >
             <div className="content flex flex-col w-1/2 max-lg:w-full h-full justify-center ">
@@ -169,8 +169,8 @@ const ServicePages = () => {
                     <motion.div
                       style={{ x: `-${xTranslate}%` }}
                       key={index}
-                      className={`card relative z-[10] group group-hover:shadow-[0_0_25px_gray] overflow-hidden flex flex-col w-60 aspect-square items-center justify-center gap-4 p-2 ${
-                        index % 2 == 0 ? "bg-white" : "bg-black text-white"
+                      className={`card relative z-[10] border border-dark-blue group group-hover:shadow-[0_0_25px_gray] overflow-hidden flex flex-col w-60 aspect-square items-center justify-center gap-4 p-2 ${
+                        index % 2 == 0 ? "bg-white" : "bg-accent-dark"
                       } border-2 border-accent-dark transition-all duration-300 cursor-pointer shadow-lg`}
                     >
                       <img
@@ -178,7 +178,7 @@ const ServicePages = () => {
                         alt={image.title}
                         className="object-cover w-12 h-12"
                       />
-                      <p className="text-center font-wix text-xl group-hover:text-shadow group-hover:font-bold font-semibold">{image.title}</p>
+                      <p className="text-center font-wix text-xl text-shadow group-hover:font-bold font-semibold">{image.title}</p>
                       <img src={`/assets/${image.image}.png`}
                         alt={image.title}
                         className="overlay object-cover w-36 h-36 z-[-8] absolute bottom-[-20px] right-0 rotate-45 blur-sm group-hover:blur-md transition-all duration-300"

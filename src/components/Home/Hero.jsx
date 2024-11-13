@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-screen bg-gradient-to-b from-accent-light to-accent-light/60 overflow-hidden flex flex-col items-center justify-end"
+      className="relative w-full h-screen border-b border-dark-blue bg-gradient-to-b from-accent-light to-accent-light/60 overflow-hidden flex flex-col items-center justify-end"
     >
       <div className="absolute overlay-text select-none inset-0 mt-[-5vh] w-full h-[105vh] flex flex-col items-start  mask-gradient">
         {overlays.map((overlay, index) => {
@@ -58,7 +58,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1 }}
-            className="font-wix font-medium text-lg max-lg:text-base "
+            className="font-['helvetica'] font-medium text-lg max-lg:text-base text-gray-600 w-4/5 text-justify"
           >
             Digicrowd Solution, the premier digital marketing company, offers
             custom-made solutions tailored to align with your business's unique
@@ -71,7 +71,7 @@ const Hero = () => {
               initial={{ scale: 0, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.3, delay: 1 }}
-              className="bg-accent button text-white text-shadow" 
+              className="button bg-accent text-white" 
             >
               Book Demo
             </motion.button>

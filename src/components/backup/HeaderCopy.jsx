@@ -6,7 +6,7 @@ import AnimatedHamburger from '../shared/AnimatedHamburger'
 const Header = () => {
 
   return (
-    <div className="absolute top-5 left-1/2 -translate-x-1/2 rounded-full z-[98] font-['inter'] flex justify-between items-center w-full px-12 max-lg:px-6">
+    <div className="absolute top-5 left-1/2 -translate-x-1/2 rounded-full z-[98] font-['helvetica'] flex justify-between items-center w-full px-12 max-lg:px-6">
       <Link to="/" className="logo">
         <img
           src="/assets/logo-small.png"

@@ -66,9 +66,9 @@ const Header = () => {
         <img src="/assets/logo.webp" alt="logo" className="object-cover max-lg:w-3/4" />
       </Link>
 
-      <div className="links-container flex gap-2 font-['inter'] items-center max-lg:hidden">
+      <div className="links-container flex gap-6 max-lg:gap-4 items-center max-lg:hidden font-['helvetica'] font-[500]">
         {Links.map((link, index) => (
-          <FlipLink key={index} to={link.to} otherClasses="mx-4 text-lg">
+          <FlipLink key={index} to={link.to} otherClasses="">
             {link.name}
           </FlipLink>
         ))}
