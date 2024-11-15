@@ -56,7 +56,7 @@ const FlipLink = ({ children, to = "/", otherClasses = "" }) => {
                 ease: "easeInOut",
                 delay: STAGGER * index,
               }}
-              className="inline-block text-blue-600"
+              className="inline-block text-blue-800"
               key={`${link}-${index}`} 
             >
               {link === " " ? "\u00A0" : link}{" "}

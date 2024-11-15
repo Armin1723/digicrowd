@@ -8,19 +8,25 @@ import ServicePages from "../components/Home/ServicePages";
 import OurClients from "../components/Home/OurClients";
 import CTA from "../components/Home/CTA";
 import Features from "../components/Home/Features";
+import OurProcess from "../components/Home/OurProcess";
+import ServicesAlter from "../components/Home/ServicesAlter";
+import Blogs from "../components/Home/Blogs";
 
 const Home = () => {
   return (
-    <div className="flex flex-col relative min-h-screen w-full">
+    <div className="flex flex-col relative min-h-screen w-full ">
       <Header />
       <Hero />
       <WhoWeAre />
       <OurCertificates />
       <OurServices />
       <ServicePages />
+      <ServicesAlter />
       <OurClients />
       <CTA />
       <Features />
+      <OurProcess />
+      <Blogs />
       <div className="h-dvh"></div>
     </div>
   );

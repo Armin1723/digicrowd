@@ -11,6 +11,10 @@
     --accent: #ff5d4d
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .mask-gradient{
     mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) , #000 40%, #000 80%, rgba(0, 0, 0, 0));
 }
@@ -51,3 +55,16 @@
 .heading{
     @apply text-6xl max-sm:text-3xl font-bold font-wix;
 }
+
+/* Hide Scrollbar */
+.scroll-snap-x {
+    /* overflow-y: scroll; */
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none !important; 
+    scrollbar-width: none !important; 
+  }
+  
+  .scroll-snap-x::-webkit-scrollbar {
+    display: none !important; 
+  }
+  

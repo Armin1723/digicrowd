@@ -20,11 +20,11 @@ const CTA = () => {
         x: e.clientX,
         y: e.clientY,
       });
-      setCursorVariant("text"); // Show cursor when mouse moves
+      setCursorVariant("text"); 
     };
 
     const handleScroll = () => {
-      setCursorVariant("default"); // Hide cursor on scroll
+      setCursorVariant("default");
     };
 
     const cta = document.querySelector(".cta-container");
@@ -68,13 +68,13 @@ const CTA = () => {
       initial="hidden"
       animate={motionControls}
       transition={{ duration: 0.7, delay: 0.1 }}
-      className="page cta w-full flex justify-center items-center py-4 relative"
+      className="page cta w-full flex justify-center items-center py-4 relative bg-dark-blue"
     >
       <div
         to="/about"
         onMouseEnter={textEnter}
         onMouseLeave={textLeave}
-        className="cta-container cursor-none flex flex-col items-center gap-2 w-full bg-dark-blue text-white px-6 py-20 "
+        className="cta-container cursor-none flex flex-col items-center gap-2 w-full  text-white px-6 py-20 "
       >
         <div className="text-container relative">
           <p className="text-[4.5rem] leading-[4.5rem] my-4 uppercase font-wix font-[900] mix-blend-difference z-[10]">

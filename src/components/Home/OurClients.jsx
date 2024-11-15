@@ -58,7 +58,7 @@ const OurClients = () => {
   ];
 
   return (
-    <div className="flex flex-col w-full items-center justify-center py-8">
+    <div className="flex flex-col w-full items-center justify-center py-8 bg-accent-light">
       <p className="heading text-4xl max-lg:text-2xl font-wix my-4">
         Our Clients
       </p>

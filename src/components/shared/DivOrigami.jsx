@@ -6,17 +6,17 @@ const DivOrigami = () => {
     <section className="flex h-60 max-lg:h-48 max-sm:scale-75 flex-col items-center justify-center gap-12 px-4 py-12 max-lg:py-6 md:flex-row ">
       <LogoRolodex
         items={[
-          <LogoItem key={1} className="bg-accent-light text-white">
-            <img src="/assets/google-analytics.webp" alt='logo' />
+          <LogoItem key={1} className="bg-gradient-to-br from-[#ffc517] to-white text-white">
+            <img src="/assets/google-analytics.webp" alt='logo' className="drop-shadow-[0_0_50px_black]"/>
           </LogoItem>,
-          <LogoItem key={2} className="bg-accent-dark text-white">
-            <img src="/assets/adwards.webp" alt='logo' />
+          <LogoItem key={2} className="bg-gradient-to-br from-[#8cb5f7] to-white text-white">
+            <img src="/assets/adwards.webp" alt='logo' className="drop-shadow-[0_0_50px_black]"/>
           </LogoItem>,
-          <LogoItem key={3} className="bg-accent-light text-white">
-            <img src="/assets/bing.webp" alt='logo' />
+          <LogoItem key={3} className="bg-gradient-to-br from-[#21e1c7] to-white text-white">
+            <img src="/assets/bing.webp" alt='logo' className="drop-shadow-[0_0_50px_black]" />
           </LogoItem>,
-          <LogoItem key={3} className="bg-accent-dark text-white">
-            <img src="/assets/adsense.webp" alt='logo' />
+          <LogoItem key={3} className="bg-gradient-to-br from-blue-600 to-yellow-100 text-white">
+            <img src="/assets/adsense.webp" alt='logo' className="drop-shadow-[0_0_50px_black]" />
           </LogoItem>,
         ]}
       />
@@ -96,7 +96,7 @@ const LogoRolodex = ({ items }) => {
         style={{
           transform: "translateZ(1px)",
         }}
-        className="absolute left-0 right-0 top-1/2 z-[999999999] -translate-y-1/2 border-t border-neutral-400"
+        className="absolute left-0 right-0 top-1/2 z-[999999999] -translate-y-1/2 border-t border-neutral-900"
       />
     </div>
   );

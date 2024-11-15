@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <div
       ref={containerRef}
-      className="relative w-full h-screen border-b border-dark-blue bg-gradient-to-b from-accent-light to-accent-light/60 overflow-hidden flex flex-col items-center justify-end"
+      className="relative w-full h-[100dvh] border-b border-dark-blue bg-gradient-to-b from-accent-light to-accent-light/60 overflow-hidden flex flex-col items-center justify-end"
     >
       <div className="absolute overlay-text select-none inset-0 mt-[-5vh] w-full h-[105vh] flex flex-col items-start  mask-gradient">
         {overlays.map((overlay, index) => {

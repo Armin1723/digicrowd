@@ -66,14 +66,14 @@ const Header = () => {
         <img src="/assets/logo.webp" alt="logo" className="object-cover max-lg:w-3/4" />
       </Link>
 
-      <div className="links-container flex gap-6 max-lg:gap-4 items-center max-lg:hidden font-['helvetica'] font-[500]">
+      <div className="links-container flex gap-6 max-lg:gap-4 text-xl items-center max-lg:hidden font-['helvetica']">
         {Links.map((link, index) => (
-          <FlipLink key={index} to={link.to} otherClasses="">
+          <FlipLink key={index} to={link.to} otherClasses="text-gray-700">
             {link.name}
           </FlipLink>
         ))}
 
-        <div className="button-container flex items-center gap-4">
+        <div className="button-container flex !text-base items-center gap-4">
           <button className="button bg-accent text-white">
             Book Demo
           </button>
