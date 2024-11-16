@@ -5,28 +5,28 @@ const processData = [
   {
     subheading: "Customization",
     heading: "Built for all of us.",
-    icon: "/assets/process-icon-1.png",
+    icon: "/assets/process-icon-1.webp",
     description:
       "We tailor personalized solutions for your brand that meet your unique requirements. And fulfil effective and optimized approaches for digital marketing.",
   },
   {
     subheading: "Implementation",
     heading: "Never compromise.",
-    icon: "/assets/process-icon-2.png",
+    icon: "/assets/process-icon-2.webp",
     description:
       "Our team of experts smoothly implements the latest techniques using updated tools, technology and precise execution to bring our plan into action seamlessly.",
   },
   {
     subheading: "Optimization",
     heading: "Whatever is for the best.",
-    icon: "/assets/process-icon-3.png",
+    icon: "/assets/process-icon-3.webp",
     description:
       "To deliver effective and high-quality results for our clients, we involve continuous modification and revision.",
   },
   {
     subheading: "Analysis",
     heading: "We know what you need.",
-    icon: "/assets/process-icon-4.png",
+    icon: "/assets/process-icon-4.webp",
     description:
       "We evaluate how well things are working, identify stability, and find areas where we can make things even better. These insights guide us in shaping future strategies.",
   },

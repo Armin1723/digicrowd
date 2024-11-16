@@ -7,21 +7,21 @@ const Features = () => {
       title: "Proven Excellence",
       subtitle:
         "Meritorious by experience.",
-      icon: "/assets/features-icon-1.png",
+      icon: "/assets/features-icon-1.webp",
       href: "/",
     },
     {
       title: "Marketing Solutions",
       subtitle:
         "Your One Stop Solution.",
-      icon: "/assets/features-icon-2.png",
+      icon: "/assets/features-icon-2.webp",
       href: "/",
     },
     {
       title: "Innovative Strategies",
       subtitle:
         "Innovate to elevate.",
-      icon: "/assets/features-icon-3.png",
+      icon: "/assets/features-icon-3.webp",
       href: "/",
     },
   ];
