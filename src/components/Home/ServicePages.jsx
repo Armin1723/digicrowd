@@ -42,7 +42,7 @@ const ServicePages = () => {
               hidden: { opacity: 0, y: 200 },
               visible: { opacity: 1, y: 0 },
             }}
-            transition={{ duration: 0.4, delay: 0.5 }}
+            transition={{ duration: 0.4, delay: 0.2 }}
             className={`flex max-lg:flex-col items-center justify-around gap-6 w-full px-[15%] max-lg:px-10 border-b ${
               cardIndex % 2 === 0 ? "bg-accent-light" : "bg-white"
             } border-black py-20 max-lg:py-12 max-sm:py-8`}

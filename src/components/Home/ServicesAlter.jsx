@@ -26,9 +26,9 @@ const ServicesAlter = () => {
       initial="hidden"
       animate={motionControls}
       transition={{ duration: 0.4, delay: 0.3 }}
-      className="flex max-sm:flex-col-reverse w-full py-8 max-sm:py-2 px-4 min-h-screen gap-4 items-center bg-accent-light border-b border-dark-blue"
+      className="flex max-sm:flex-col-reverse w-full py-8 max-sm:py-2 px-4 min-h-[60vh] gap-4 items-center bg-accent-light border-b border-dark-blue"
     >
-      <div className="link-container flex flex-col justify-center gap-4 w-1/2 max-sm:w-full px-12 max-lg:px-8 max-sm:px-4 md:my-8 max-sm:h-1/2 relative z-[20]">
+      <div className="link-container flex flex-col justify-center gap-4 w-1/2 max-sm:w-full px-12 max-lg:px-8 max-sm:px-4 max-sm:h-1/2 relative z-[20]">
         {cardsData.map((card, index) => {
           return (
             <motion.div

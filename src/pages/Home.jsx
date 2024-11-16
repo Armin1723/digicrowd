@@ -11,6 +11,9 @@ import Features from "../components/Home/Features";
 import OurProcess from "../components/Home/OurProcess";
 import ServicesAlter from "../components/Home/ServicesAlter";
 import Blogs from "../components/Home/Blogs";
+import Testimonials from "../components/Home/Testimonials";
+import Footer from "../components/shared/Footer";
+import IntroFooter from "../components/shared/IntroFooter";
 
 const Home = () => {
   return (
@@ -27,7 +30,9 @@ const Home = () => {
       <Features />
       <OurProcess />
       <Blogs />
-      <div className="h-dvh"></div>
+      <Testimonials />
+      <IntroFooter />
+      <Footer />
     </div>
   );
 };

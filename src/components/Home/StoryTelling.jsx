@@ -34,9 +34,7 @@ const processData = [
 
 const StoryTelling = () => {
   const containerRef = useRef(null);
-  const isInView = useInView(containerRef);
-
-
+ 
   return (
     <div
       ref={containerRef}
@@ -66,14 +64,14 @@ const TextParallaxContent = ({ imgUrl, children }) => {
       <div
         className="relative w-full "
         style={{
-          height: `calc(${SLIDE_SIZE * (processData.length + 1) + 450}vh)`,
+          height: `calc(${SLIDE_SIZE * (processData.length + 1) + 170}vh)`,
         }}
       >
         <StickyImage imgUrl={imgUrl} />
         <div
           className="overlays absolute w-full flex flex-col top-0 left-0"
           style={{
-            height: `calc(${SLIDE_SIZE * (processData.length + 1) + 450}vh)`,
+            height: `calc(${SLIDE_SIZE * (processData.length + 1) + 170}vh)`,
           }}
         >
           <motion.div
@@ -172,7 +170,7 @@ const OverlayCopy = ({ index, subheading, heading, icon, description }) => {
   const y = useTransform(
     scrollYProgress,
     [0, 0.3, 0.6, 0.75],
-    [250, 0, 0, -150]
+    [100, 0, 0, -150]
   );
   const scale = useTransform(
     scrollYProgress,
@@ -191,7 +189,7 @@ const OverlayCopy = ({ index, subheading, heading, icon, description }) => {
         y,
         opacity,
         scale,
-        height: `${SLIDE_SIZE + 100}vh`,
+        height: `${SLIDE_SIZE + 30}vh`,
       }}
       ref={targetRef}
       className="z-[101] relative text-lg md:text-xl flex w-full flex-col items-center justify-start text-white"
@@ -202,13 +200,13 @@ const OverlayCopy = ({ index, subheading, heading, icon, description }) => {
           alt="icon"
           className="w-24 aspect-square object-cover my-4 rounded-full border border-black"
         />
-        <p className="mb-2 text-center text-xl md:mb-4 md:text-3xl font-bold">
-          {index + 1}.{subheading}
+        <p className="mb-2 text-center text-4xl md:mb-4 md:text-6xl font-bold">
+          {index + 1}. {subheading}
         </p>
-        <p className="text-center text-4xl font-bold md:text-7xl max-w-[90vw] ">
+        <p className="text-center text-xl font-semibold md:text-3xl max-w-[90vw] ">
           {heading}
         </p>
-        <p className="text-center py-8 w-1/2 max-lg:w-3/4 max-sm:w-[90%] text-lg">
+        <p className="text-center py-8 w-1/2 max-lg:w-3/4 max-sm:w-[90%] text-xl max-sm:text-lg">
           {description}
         </p>
       </div>

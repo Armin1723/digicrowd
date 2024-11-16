@@ -56,7 +56,24 @@ const Blogs = () => {
   return (
     <div className="flex flex-col w-full px-[10%] max-lg:px-6 relative py-6 max-sm:pt-0 bg-gradient-to-b from-transparent to-accent-light/60">
       <p className="heading text-4xl max-sm:text-2xl !my-0">Our Blogs</p>
-      <div className="blogs-container flex my-4 py-4 w-full gap-8 max-sm:gap-2 overflow-x-scroll scroll-snap-x select-none flex-shrink-0">
+
+      <div className="controls flex gap-4 my-4 w-full justify-end select-none">
+        <div
+          className="px-4 py-1 text-lg font-extrabold border border-black hover:bg-black/80 hover:text-white transition-all duration-300 cursor-pointer"
+          onClick={() =>
+            setCurr((prev) => (prev > 0 ? prev - 1 : blogsData.length - 1))
+          }
+        >
+          ←
+        </div>
+        <div
+          className="px-4 py-1 text-lg font-extrabold border border-black hover:bg-black/80 hover:text-white transition-all duration-300 cursor-pointer"
+          onClick={() => setCurr((prev) => (prev + 1) % (blogsData.length - 1))}
+        >
+          →
+        </div>
+      </div>
+      <div className="blogs-container flex my-4 py-4 w-full gap-4 justify-start max-sm:gap-2 overflow-x-scroll scroll-snap-x select-none flex-shrink-0">
         {blogsData.map((blog, index) => {
           return (
             <motion.div
@@ -64,7 +81,7 @@ const Blogs = () => {
               style={{
                 translateX: `-${curr * 100}%`,
               }}
-              className="blog-card bg-white shadow-md rounded-lg group cursor-pointer min-w-[33%] max-lg:min-w-[50%] flex flex-col p-4 max-sm:p-2 transition-all duration-300 ease-in"
+              className="blog-card bg-white shadow-md rounded-lg group cursor-pointer min-w-[33%] max-lg:min-w-[50%] max-sm:min-w-full flex flex-col p-4 max-sm:p-2 transition-all duration-300 ease-in"
             >
               <div className="image-container rounded-md group-hover:!-translate-y-4 transition-all duration-300 ease-in w-full aspect-[16/9] border overflow-hidden my-4">
                 <img
@@ -89,22 +106,7 @@ const Blogs = () => {
           );
         })}
       </div>
-      <div className="controls flex gap-4 my-4 max-sm:my-0 select-none">
-        <div
-          className="px-4 py-1 text-lg font-extrabold border border-black hover:bg-black/80 hover:text-white transition-all duration-300 cursor-pointer"
-          onClick={() =>
-            setCurr((prev) => (prev > 0 ? prev - 1 : blogsData.length - 1))
-          }
-        >
-          ←
-        </div>
-        <div
-          className="px-4 py-1 text-lg font-extrabold border border-black hover:bg-black/80 hover:text-white transition-all duration-300 cursor-pointer"
-          onClick={() => setCurr((prev) => (prev + 1) % (blogsData.length - 1))}
-        >
-          →
-        </div>
-      </div>
+      
     </div>
   );
 };
