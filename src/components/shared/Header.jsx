@@ -63,7 +63,8 @@ const Header = () => {
       className="fixed top-0 w-full overflow-hidden -translate-y-fll flex justify-between items-center z-[98] bg-whte p-4 px-12 max-lg:px-8 max-sm:px-4 bg-opacity0 transition-all duration-300"
     >
       <Link to="/" className="logo">
-        <img src="/assets/logo.webp" alt="logo" className="object-cover max-lg:w-3/4" />
+        <img
+                loading="lazy" src="/assets/logo.webp" alt="logo" className="object-cover max-lg:w-3/4" />
       </Link>
 
       <div className="links-container flex gap-6 max-lg:gap-4 text-xl items-center max-lg:hidden font-['helvetica']">
@@ -74,10 +75,10 @@ const Header = () => {
         ))}
 
         <div className="button-container flex !text-base items-center gap-4">
-          <button name="Book Demo" className="button bg-accent text-white">
+          <button aria-label="Book Demo" className="button bg-accent text-white">
             Book Demo
           </button>
-          <button name="Free Audit" className="button text-accent">
+          <button aria-label="Free Audit" className="button text-accent">
             Free Audit
           </button>
         </div>

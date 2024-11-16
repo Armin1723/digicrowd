@@ -67,6 +67,7 @@ const Features = () => {
 
         <div className="graphic flex items-center">
           <img
+                loading="lazy"
             src="/assets/features-graphic.webp"
             alt="features-graphic"
             className="object-fill w-full flex-1 aspect-[2/3] max-h-[50vh]"

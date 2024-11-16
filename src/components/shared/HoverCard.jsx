@@ -10,11 +10,13 @@ const HoverCard = ({ title, subtitle, icon, href }) => {
       <div className="absolute inset-0 bg-accent-dark translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-300" />
 
       <img
+                loading="lazy"
         src={icon}
         alt={title}
         className="absolute z-10 bottom-0 blur-md group-hover:blur-sm scale-75 -right-12 text-9xl text-slate-100 group-hover:rotate-12 transition-all duration-300"
       />
       <img
+                loading="lazy"
         src={icon}
         alt={title}
         className="h-16 m-4 aspect-square  transition-colors relative z-12 duration-300 object-cover"

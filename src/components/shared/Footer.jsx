@@ -79,21 +79,25 @@ const Footer = () => {
             Contact Us
           </p>
           <div className="text-base flex items-center gap-2 ">
-            <img src="/footer/call-icon.png" alt="email" className="w-6 h-6" />
+            <img
+                loading="lazy" src="/footer/call-icon.png" alt="email" className="w-6 h-6" />
             <p>+1 234 567 890</p>
           </div>
           <div className="text-base flex items-center gap-2">
-            <img src="/footer/pin-icon.png" alt="email" className="w-6 h-6" />
+            <img
+                loading="lazy" src="/footer/pin-icon.png" alt="email" className="w-6 h-6" />
             <p>1234 Street Name, City Name, United States</p>
           </div>
           <div className="text-base flex items-center gap-2">
-            <img src="/footer/email-icon.png" alt="email" className="w-6 h-6" />
+            <img
+                loading="lazy" src="/footer/email-icon.png" alt="email" className="w-6 h-6" />
             <p>contact@digicrowdsolution.com</p>
           </div>
         </div>
         <div className="certifications w-1/2 max-sm:w-full flex flex-col justify-center items-start gap-4">
           <div className=" google-link flex flex-col gap-1">
             <img
+                loading="lazy"
               src="/footer/google-icon.svg"
               alt="google"
               className="w-20 aspect-video"
@@ -104,6 +108,7 @@ const Footer = () => {
             {Array.from({ length: 4 }).map((_, index) => {
               return (
                 <img
+                loading="lazy"
                   key={index}
                   src={`/footer/other-link-${index + 1}.svg`}
                   alt="cert"

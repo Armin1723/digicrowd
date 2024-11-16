@@ -85,6 +85,7 @@ const Blogs = () => {
             >
               <div className="image-container rounded-md group-hover:!-translate-y-4 transition-all duration-300 ease-in w-full aspect-[16/9] border overflow-hidden my-4">
                 <img
+                loading="lazy"
                   src={`/assets/blog-${
                     (index % (blogsData.length / 2)) + 1
                   }.webp`}

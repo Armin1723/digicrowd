@@ -46,6 +46,7 @@ const Testimonials = () => {
 
         <div className="absolute star-1 top-0 left-0 -translate-x-1/2 -translate-y-1/2">
           <img
+                loading="lazy"
             src="/utility/frame.svg"
             alt="star"
             className="object-cover stroke-dark-blue h-full w-6 aspect-square !text-3xl "
@@ -53,6 +54,7 @@ const Testimonials = () => {
         </div>
         <div className="absolute star-2 bottom-0 right-0 translate-x-1/2 translate-y-1/2">
           <img
+                loading="lazy"
             src="/utility/frame.svg"
             alt="star"
             className="object-cover stroke-dark-blue h-full w-6 aspect-square !text-3xl"
@@ -70,6 +72,7 @@ const Testimonials = () => {
               >
                 <div className="content flex flex-col">
                   <img
+                loading="lazy"
                     src={`/testimonials/0${index + 1}.png`}
                     alt="quote"
                     className="w-24 aspect-square object-cover stroke-dark-blue !fill-dark-blue"
@@ -87,6 +90,7 @@ const Testimonials = () => {
                     {Array.from({ length: 5 }).map((_, i) => {
                       return (
                         <img
+                loading="lazy"
                           src="/utility/star.svg"
                           alt="star"
                           key={i}

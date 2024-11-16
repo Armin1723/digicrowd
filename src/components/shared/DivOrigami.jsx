@@ -7,16 +7,20 @@ const DivOrigami = () => {
       <LogoRolodex
         items={[
           <LogoItem key={1} className="bg-gradient-to-br from-[#ffc517] to-white text-white">
-            <img src="/assets/google-analytics.webp" alt='logo' className="drop-shadow-[0_0_50px_black]"/>
+            <img
+                loading="lazy" src="/assets/google-analytics.webp" alt='logo' className="drop-shadow-[0_0_50px_black]"/>
           </LogoItem>,
           <LogoItem key={2} className="bg-gradient-to-br from-[#8cb5f7] to-white text-white">
-            <img src="/assets/adwards.webp" alt='logo' className="drop-shadow-[0_0_50px_black]"/>
+            <img
+                loading="lazy" src="/assets/adwards.webp" alt='logo' className="drop-shadow-[0_0_50px_black]"/>
           </LogoItem>,
           <LogoItem key={3} className="bg-gradient-to-br from-[#21e1c7] to-white text-white">
-            <img src="/assets/bing.webp" alt='logo' className="drop-shadow-[0_0_50px_black]" />
+            <img
+                loading="lazy" src="/assets/bing.webp" alt='logo' className="drop-shadow-[0_0_50px_black]" />
           </LogoItem>,
           <LogoItem key={3} className="bg-gradient-to-br from-blue-600 to-yellow-100 text-white">
-            <img src="/assets/adsense.webp" alt='logo' className="drop-shadow-[0_0_50px_black]" />
+            <img
+                loading="lazy" src="/assets/adsense.webp" alt='logo' className="drop-shadow-[0_0_50px_black]" />
           </LogoItem>,
         ]}
       />

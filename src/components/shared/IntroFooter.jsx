@@ -18,9 +18,9 @@ const IntroFooter = () => {
   return (
     <div className="w-full px-[10%] max-lg:px-[5%] max-sm:px-6 !bg-accent-light flex flex-col max-sm:flex-col-reverse justify-around max-sm:justify-around items-center max-h-dvh min-h-[60vh] relative select-none">
       <img
+        loading="lazy"
         src="/footer/overlay-1-no-background.png"
         alt="overlay"
-        loading="lazy"
         className="absolute bottom-0 left-0 w-full h-auto z-[-0] aspect-video object-cover select-none"
       />
       <div className="banner-display container flex min-w-full overflow-x-hidden z-[30] select-none">
@@ -72,7 +72,11 @@ const IntroFooter = () => {
               placeholder="your@email.com"
               autoComplete="off"
             />
-            <input className="button--submit bg-blue-950/70 p-2 rounded-e-md border border-blue-800 border-l-0 transition-all duration-300 hover:bg-blue-950 cursor-pointer" value="Subscribe" type="submit" />
+            <input
+              className="button--submit bg-blue-950/70 p-2 rounded-e-md border border-blue-800 border-l-0 transition-all duration-300 hover:bg-blue-950 cursor-pointer"
+              value="Subscribe"
+              type="submit"
+            />
           </div>
         </div>
       </div>

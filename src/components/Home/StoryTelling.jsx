@@ -196,6 +196,7 @@ const OverlayCopy = ({ index, subheading, heading, icon, description }) => {
     >
       <div className="sticky top-0 w-full flex flex-col items-center justify-center h-screen ">
         <img
+                loading="lazy"
           src={icon}
           alt="icon"
           className="w-24 aspect-square object-cover my-4 rounded-full border border-black"
@@ -231,7 +232,7 @@ const OtherContent = () => (
         for your business
       </p>
       <div className="button-container flex w-4/5 items-start my-6">
-        <button name='Know More' className="rounded-lg px-6 py-2 text-lg font-bold font-wix text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300">
+        <button aria-label='Know More' className="rounded-lg px-6 py-2 text-lg font-bold font-wix text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300">
           Know More
         </button>
       </div>

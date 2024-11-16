@@ -152,6 +152,7 @@ const CarouselPrevious = React.forwardRef(({ className, variant = "outline", siz
 
   return (
     (<Button
+    aria-label="Previous slide"
       ref={ref}
       variant={variant}
       size={size}
@@ -161,7 +162,8 @@ const CarouselPrevious = React.forwardRef(({ className, variant = "outline", siz
       disabled={!canScrollPrev}
       onClick={scrollPrev}
       {...props}>
-        <img src="/utility/arrow-left.svg" alt="arrow" />
+        <img
+                loading="lazy" src="/utility/arrow-left.svg" alt="arrow" />
       <span className="sr-only">Previous slide</span>
     </Button>)
   );
@@ -173,6 +175,7 @@ const CarouselNext = React.forwardRef(({ className, variant = "outline", size = 
 
   return (
     (<Button
+    aria-label="Next slide"
       ref={ref}
       variant={variant}
       size={size}
@@ -182,7 +185,8 @@ const CarouselNext = React.forwardRef(({ className, variant = "outline", size = 
       disabled={!canScrollNext}
       onClick={scrollNext}
       {...props}>
-        <img src="/utility/arrow-right.svg" alt="arrow" />
+        <img
+                loading="lazy" src="/utility/arrow-right.svg" alt="arrow" />
       <span className="sr-only">Next slide</span>
     </Button>)
   );

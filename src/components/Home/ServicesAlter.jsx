@@ -41,6 +41,7 @@ const ServicesAlter = () => {
                 {card.title}
               </span>
               <img
+                loading="lazy"
                 src="/utility/arrow-right-colored.svg"
                 alt="arrow"
                 className="object-cover w-8 z-[20] !text-dark-blue !stroke-dark-blue !fill-dark-blue group-hover:translate-x-12 transition-all duration-300"
@@ -51,6 +52,7 @@ const ServicesAlter = () => {
         {Array.from({ length: 4 }).map((_, index) => {
           return (
             <img
+                loading="lazy"
               key={index}
               src={`/assets/example-${index + 1}.webp`}
               alt="bg"

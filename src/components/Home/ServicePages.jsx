@@ -51,7 +51,7 @@ const ServicePages = () => {
               <p className="heading my-6 text-4xl max-lg:text-2xl">{card.title}</p>
               <p>{card.description}</p>
               <div className="button-container flex w-4/5 items-start my-6">
-                <button name='Know More' className="rounded-lg px-6 py-2 text-lg font-bold font-wix text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300">
+                <button aria-label='Know More' className="rounded-lg px-6 py-2 text-lg font-bold font-wix text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300">
                   Know More
                 </button>
               </div>
@@ -71,13 +71,16 @@ const ServicePages = () => {
                     >
                       
                       <img
+                loading="lazy"
                         src={`/assets/${image.image}.webp`}
                         alt={image.title}
                         className="icon object-cover w-16 p-2 group-hover:w-20 group-hover:border border-black aspect-square rounded-full group-hover:bg-white drop-shadow-[0_0_25px_gray] transition-all duration-300"
                       />
-                      <img src={overlayImage} alt="overlay" className="overlayImg absolute w-60 translate-y-full group-hover:translate-y-0 aspect-square object-cover z-[-8] transition-all duration-300 blur-sm" />
+                      <img
+                loading="lazy" src={overlayImage} alt="overlay" className="overlayImg absolute w-60 translate-y-full group-hover:translate-y-0 aspect-square object-cover z-[-8] transition-all duration-300 blur-sm" />
                       <p className="text-center font-wix text-xl font-bold group-hover:text-white transition-all duration-300">{image.title}</p>
                       <img
+                loading="lazy"
                         src={`/assets/${image.image}.webp`}
                         alt={image.title}
                         className="overlay object-cover w-36 h-36 z-[-10] absolute bottom-[-20px] right-0 rotate-45 blur-lg group-hover:blur-md transition-all duration-300"
