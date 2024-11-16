@@ -51,7 +51,7 @@ const ServicePages = () => {
               <p className="heading my-6 text-4xl max-lg:text-2xl">{card.title}</p>
               <p>{card.description}</p>
               <div className="button-container flex w-4/5 items-start my-6">
-                <button className="rounded-lg px-6 py-2 text-lg font-bold font-wix text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300">
+                <button name='Know More' className="rounded-lg px-6 py-2 text-lg font-bold font-wix text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300">
                   Know More
                 </button>
               </div>

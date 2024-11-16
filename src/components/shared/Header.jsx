@@ -74,10 +74,10 @@ const Header = () => {
         ))}
 
         <div className="button-container flex !text-base items-center gap-4">
-          <button className="button bg-accent text-white">
+          <button name="Book Demo" className="button bg-accent text-white">
             Book Demo
           </button>
-          <button className="button text-accent">
+          <button name="Free Audit" className="button text-accent">
             Free Audit
           </button>
         </div>

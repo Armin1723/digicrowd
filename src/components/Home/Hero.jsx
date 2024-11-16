@@ -68,6 +68,7 @@ const Hero = () => {
           </motion.p>
           <div className="button-container flex items-center gap-4">
             <motion.button
+            name="Book Demo"
               initial={{ scale: 0, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.3, delay: 1 }}
@@ -76,6 +77,7 @@ const Hero = () => {
               Book Demo
             </motion.button>
             <motion.button
+            name="Request a Call"
               initial={{ scale: 0, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.3, delay: 1 }}

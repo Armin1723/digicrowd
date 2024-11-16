@@ -58,7 +58,7 @@ const WhoWeAre = () => {
         </div>
 
         <div className="button-container flex w-4/5 items-start">
-          <button className="rounded-lg px-6 py-2 text-lg font-bold font-wix text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300">
+          <button name="Read More" className="rounded-lg px-6 py-2 text-lg font-bold font-wix text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300">
             Read More
           </button>
         </div>

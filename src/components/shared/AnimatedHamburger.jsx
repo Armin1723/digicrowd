@@ -11,6 +11,7 @@ const AnimatedHamburger = () => {
       }}
     >
       <motion.button
+      name="Hamburger"
         initial={false}
         animate={active ? "open" : "closed"}
         onClick={() => setActive((pv) => !pv)}

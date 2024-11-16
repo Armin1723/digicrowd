@@ -23,7 +23,7 @@ const IntroFooter = () => {
         loading="lazy"
         className="absolute bottom-0 left-0 w-full h-auto z-[-0] aspect-video object-cover select-none"
       />
-      <div className="banner-display mask-horizontal container flex min-w-full overflow-x-hidden z-[30] select-none">
+      <div className="banner-display container flex min-w-full overflow-x-hidden z-[30] select-none">
         <div className="flex flex-shrink-0">
           {texts.map((text, index) => {
             return (
@@ -32,7 +32,7 @@ const IntroFooter = () => {
                 animate={{ x: "-100%" }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 key={index}
-                className="flex flex-col items-center justify-center flex-shrink-0 min-w-[10%] text-transparent !bg-clip-text bg-gradient-to-br from-white to-dark-blue/50 max-sm:bg-white max-sm:text-shadow font-['arial']"
+                className="flex flex-col items-center justify-center flex-shrink-0 min-w-[10%] text-white !bg-clip-text bg-gradient-to-br from-white to-dark-blue/50 max-sm:bg-white max-sm:text-shadow font-['arial']"
               >
                 <p className="text-2xl font-extrabold ">#{text}</p>
               </motion.div>
@@ -45,7 +45,7 @@ const IntroFooter = () => {
                 animate={{ x: "-100%" }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 key={index}
-                className="flex flex-col items-center justify-center flex-shrink-0 min-w-[10%] text-transparent !bg-clip-text bg-gradient-to-br from-white to-dark-blue/50 max-sm:bg-white max-sm:text-shadow font-['arial']"
+                className="flex flex-col items-center justify-center flex-shrink-0 min-w-[10%] text-white !bg-clip-text bg-gradient-to-br from-white to-dark-blue/50 max-sm:bg-white max-sm:text-shadow font-['arial']"
               >
                 <p className="text-2xl font-extrabold">#{text}</p>
               </motion.div>
@@ -70,7 +70,7 @@ const IntroFooter = () => {
               id="Email"
               name="Email"
               placeholder="your@email.com"
-              autocomplete="off"
+              autoComplete="off"
             />
             <input className="button--submit bg-blue-950/70 p-2 rounded-e-md border border-blue-800 border-l-0 transition-all duration-300 hover:bg-blue-950 cursor-pointer" value="Subscribe" type="submit" />
           </div>
