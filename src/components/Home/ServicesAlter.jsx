@@ -52,7 +52,7 @@ const ServicesAlter = () => {
           return (
             <img
               key={index}
-              src={`/assets/example-${index + 1}.jpg`}
+              src={`/assets/example-${index + 1}.webp`}
               alt="bg"
               className={`absolute z-[1] h-full left-0 aspect-[3/4] object-cover rounded-md overflow-hidden border border-gray shadow-[0_0_25px_gray] ${
                 index === activeIndex
