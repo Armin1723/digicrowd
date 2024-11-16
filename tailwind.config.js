@@ -14,7 +14,7 @@ export default {
 			'accent': '#ff5d4d', 		
   	},
 	fontFamily:{
-		wix: ['Wix Madefor Display', 'serif']
+		wix: ['WixFontVariable', 'serif']
 	}
   },
   plugins: [require("tailwindcss-animate")],

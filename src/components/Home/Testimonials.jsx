@@ -31,7 +31,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="w-full bg-gradient-to-b from-accent-light/60 to-accent-light min-h-screen flex flex-col px-[10%] max-lg:px-[5%] max-sm:px-6 py-4">
+    <div className="w-full bg-gradient-to-b from-accent-light/60 border-b to-accent-light min-h-[90vh] max-sm:min-h-[50vh] flex flex-col px-[10%] max-lg:px-[5%] max-sm:px-6 py-4">
       <p className="heading">Testimonials</p>
       <p className="my-4 text-lg text-neutral-800">
         Hear what our clients have to say about us

@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Wix';
+    src: url('/fonts/WixFontVariable.ttf') format('ttf'),
+  }
+  
 
 :root{
     --accent-light: #e2e8f0;
@@ -72,4 +76,3 @@ body{
     -webkit-text-stroke: 0.2px var(--accent-light);
   }
 
-  /* Email Subscribe */ 
