@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Wix';
-    src: url('/fonts/WixFontVariable.ttf') format('ttf'),
+    font-family: 'Wix Madefor Display';
+    src: url('/fonts/WixMadeforDisplay-Regular.ttf') format('ttf'),
   }
   
 
