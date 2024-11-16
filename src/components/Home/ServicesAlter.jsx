@@ -34,10 +34,10 @@ const ServicesAlter = () => {
             <motion.div
               onHoverStart={() => setActiveIndex(index)}
               onHoverEnd={() => setActiveIndex(null)}
-              className={`group w-3/5 max-lg:w-4/5 max-sm:w-[90%] font-wix py-6 z-[20] cursor-pointer flex items-center gap-4 transition-all duration-300 border-dark-blue`}
+              className={`group w-3/5 max-lg:w-4/5 max-sm:w-[90%] py-2 font-wix z-[20] cursor-pointer flex items-center gap-4 transition-all duration-300 border-dark-blue`}
               key={index}
             >
-              <span className=" heading !text-6xl max-lg:!text-4xl mix-blend-difference group-hover:translate-x-12 z-[20] before:absolute before:h-[1px] before:bg-black before:w-0 before:bottom-0 before:left-0 group-hover:before:w-full before:transition-all before:duration-500 before:ease-out pb-1 transition-all duration-500 ease-out">
+              <span className=" heading !text-5xl max-lg:!text-3xl mix-blend-difference group-hover:translate-x-12 z-[20] before:absolute before:h-[1px] before:bg-black before:w-0 before:bottom-0 before:left-0 group-hover:before:w-full before:transition-all before:duration-500 before:ease-out pb-1 transition-all duration-500 ease-out">
                 {card.title}
               </span>
               <img
@@ -52,7 +52,7 @@ const ServicesAlter = () => {
         {Array.from({ length: 4 }).map((_, index) => {
           return (
             <img
-                loading="lazy"
+              loading="lazy"
               key={index}
               src={`/assets/example-${index + 1}.webp`}
               alt="bg"

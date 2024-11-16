@@ -63,20 +63,22 @@ const IntroFooter = () => {
           </p>
         </div>
         <div className="input flex items-center justify-center w-1/2 max-sm:w-full selection:bg-black selection:text-white">
-          <div className="input-group max-w-[60%] flex gap-0 justify-center items-center p-2 bg-transparent">
+          <div className="input-group max-w-[60%] max-sm:min-w-[80%] flex max-sm:flex-col gap-0 justify-center items-center p-2 bg-transparent">
             <input
               type="email"
-              className="input bg-transparent text-white border border-r-0 border-blue-800 p-2 rounded-l-md outline-none placeholder:pl-2 pl-2"
+              className="input bg-transparent max-sm:w-full text-white border border-r-0 max-sm:border-r max-sm:border-b-0 border-blue-800 p-2 rounded-l-md max-sm:rounded-l-none max-sm:rounded-t-md outline-none placeholder:pl-2 pl-2"
               id="Email"
               name="Email"
               placeholder="your@email.com"
               autoComplete="off"
             />
-            <input
-              className="button--submit bg-blue-950/70 p-2 rounded-e-md border border-blue-800 border-l-0 transition-all duration-300 hover:bg-blue-950 cursor-pointer"
-              value="Subscribe"
+            <button
+              aria-label="subscribe to newsletter"
+              className="button--submit bg-blue-700/70 max-sm:w-full p-2 rounded-r-md max-sm:rounded-r-none max-sm:rounded-b-md disabled:bg-gray-900 disabled:cursor-not-allowed border border-blue-800 border-l-0 max-sm:border-l transition-all duration-300 hover:bg-blue-900 cursor-pointer"
               type="submit"
-            />
+            >
+              Submit{" "}
+            </button>
           </div>
         </div>
       </div>

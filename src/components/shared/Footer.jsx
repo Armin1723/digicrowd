@@ -36,7 +36,6 @@ const Footer = () => {
 
   return (
     <footer className="relative bg-[#010202] text-white min-h-dvh overflow-hidden flex flex-col justify-between items-center">
-
       {/* Upper section with icons/links */}
       <div className="flex max-lg:flex-col items-start py-8 max-sm:py-2 w-4/5 max-sm:w-full max-sm:px-4 max-sm:gap-6 justify-start">
         <div className="flex flex-col flex-wrap justify-center gap-4 w-1/2 max-lg:w-full">
@@ -80,24 +79,36 @@ const Footer = () => {
           </p>
           <div className="text-base flex items-center gap-2 ">
             <img
-                loading="lazy" src="/footer/call-icon.png" alt="email" className="w-6 h-6" />
+              loading="lazy"
+              src="/footer/call-icon.png"
+              alt="email"
+              className="w-6 h-6"
+            />
             <p>+1 234 567 890</p>
           </div>
           <div className="text-base flex items-center gap-2">
             <img
-                loading="lazy" src="/footer/pin-icon.png" alt="email" className="w-6 h-6" />
+              loading="lazy"
+              src="/footer/pin-icon.png"
+              alt="email"
+              className="w-6 h-6"
+            />
             <p>1234 Street Name, City Name, United States</p>
           </div>
           <div className="text-base flex items-center gap-2">
             <img
-                loading="lazy" src="/footer/email-icon.png" alt="email" className="w-6 h-6" />
+              loading="lazy"
+              src="/footer/email-icon.png"
+              alt="email"
+              className="w-6 h-6"
+            />
             <p>contact@digicrowdsolution.com</p>
           </div>
         </div>
         <div className="certifications w-1/2 max-sm:w-full flex flex-col justify-center items-start gap-4">
           <div className=" google-link flex flex-col gap-1">
             <img
-                loading="lazy"
+              loading="lazy"
               src="/footer/google-icon.svg"
               alt="google"
               className="w-20 aspect-video"
@@ -108,7 +119,7 @@ const Footer = () => {
             {Array.from({ length: 4 }).map((_, index) => {
               return (
                 <img
-                loading="lazy"
+                  loading="lazy"
                   key={index}
                   src={`/footer/other-link-${index + 1}.svg`}
                   alt="cert"
@@ -132,14 +143,15 @@ const Footer = () => {
         animate={motionControls}
         transition={{ duration: 0.5 }}
       >
-        <div
+        <motion.div
+          loading="lazy"
           style={{
             background: "url('/footer/overlay-gif-3.webp') center",
           }}
           className="text-[15.8vw] w-full text-center !bg-clip-text font-['arial'] text-transparent bg-gradient-to-b from-[#124d69 from-dark-blue to-[#008aff] tracking-tight max-sm:tracking-normal font-extrabold leading-none"
         >
           DIGICROWD
-        </div>
+        </motion.div>
       </motion.div>
     </footer>
   );

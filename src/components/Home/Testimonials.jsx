@@ -36,8 +36,7 @@ const Testimonials = () => {
       <p className="my-4 text-lg text-neutral-800">
         Hear what our clients have to say about us
       </p>
-      <div className="testimonail-container my-4 w-4/5 max-sm:w-full h-[50vh] max-sm:h-[58vh] relative flex max-sm:flex-col justify-center items-center max-sm:items-start max-sm:justify-end">
-
+      <div className="testimonial-container my-4 w-4/5 max-sm:w-full h-[50vh] relative flex max-sm:flex-col justify-center items-center max-sm:items-start max-sm:justify-end">
         {/* All Borders */}
         <div className="top-border absolute top-0 left-[5%] max-sm:left-[10%] w-[95%] max-sm:w-[90%] bg-dark-blue h-[0.5px]"></div>
         <div className="left-border absolute top-[10%] left-0 w-[1px] bg-dark-blue h-[90%]"></div>
@@ -46,7 +45,7 @@ const Testimonials = () => {
 
         <div className="absolute star-1 top-0 left-0 -translate-x-1/2 -translate-y-1/2">
           <img
-                loading="lazy"
+            loading="lazy"
             src="/utility/frame.svg"
             alt="star"
             className="object-cover stroke-dark-blue h-full w-6 aspect-square !text-3xl "
@@ -54,14 +53,14 @@ const Testimonials = () => {
         </div>
         <div className="absolute star-2 bottom-0 right-0 translate-x-1/2 translate-y-1/2">
           <img
-                loading="lazy"
+            loading="lazy"
             src="/utility/frame.svg"
             alt="star"
             className="object-cover stroke-dark-blue h-full w-6 aspect-square !text-3xl"
           />
         </div>
 
-        <div className="testimonials w-2/3 max-sm:w-full h-full max-sm:h-4/5 relative m-4 p-4">
+        <div className="testimonials w-2/3 max-sm:w-full h-full max-sm:h-3/4 relative m-4 p-4">
           {testimonialData.map((testimonial, index) => {
             return (
               <div
@@ -72,12 +71,12 @@ const Testimonials = () => {
               >
                 <div className="content flex flex-col">
                   <img
-                loading="lazy"
+                    loading="lazy"
                     src={`/testimonials/0${index + 1}.png`}
                     alt="quote"
                     className="w-24 aspect-square object-cover stroke-dark-blue !fill-dark-blue"
                   />
-                  <p className="text-xl max-sm:text-base font-bold font-wix mt-4 max-sm:mt-2 pr-4">
+                  <p className="text-xl max-sm:text-base font-bold font-wix mt-4 max-sm:mt-2 pr-4 max-sm:pr-8">
                     "{testimonial.content.split(" ").slice(0, 10).join(" ")}..."
                   </p>
                 </div>
@@ -90,7 +89,7 @@ const Testimonials = () => {
                     {Array.from({ length: 5 }).map((_, i) => {
                       return (
                         <img
-                loading="lazy"
+                          loading="lazy"
                           src="/utility/star.svg"
                           alt="star"
                           key={i}
