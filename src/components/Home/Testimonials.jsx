@@ -32,11 +32,12 @@ const Testimonials = () => {
 
   return (
     <div className="w-full bg-gradient-to-b from-accent-light/60 border-b to-accent-light min-h-[90vh] max-sm:min-h-[50vh] flex flex-col px-[10%] max-lg:px-[5%] max-sm:px-6 py-4">
-      <p className="heading">Testimonials</p>
+      <p className="heading !text-4xl max-lg:!text-2xl max-sm:!text-xl">Testimonials</p>
       <p className="my-4 text-lg text-neutral-800">
         Hear what our clients have to say about us
       </p>
-      <div className="testimonial-container my-4 w-4/5 max-sm:w-full h-[50vh] relative flex max-sm:flex-col justify-center items-center max-sm:items-start max-sm:justify-end">
+      <div className="testimonial-container my-4 w-4/5 max-lg:w-full h-[50vh] relative flex max-sm:flex-col justify-center items-center max-sm:items-start max-sm:justify-end">
+      
         {/* All Borders */}
         <div className="top-border absolute top-0 left-[5%] max-sm:left-[10%] w-[95%] max-sm:w-[90%] bg-dark-blue h-[0.5px]"></div>
         <div className="left-border absolute top-[10%] left-0 w-[1px] bg-dark-blue h-[90%]"></div>
@@ -60,12 +61,12 @@ const Testimonials = () => {
           />
         </div>
 
-        <div className="testimonials w-2/3 max-sm:w-full h-full max-sm:h-3/4 relative m-4 p-4">
+        <div className="testimonials w-2/3 max-sm:w-full h-3/4 max-sm:h-3/4 relative px-2 mx-2">
           {testimonialData.map((testimonial, index) => {
             return (
               <div
                 key={index}
-                className={`absolute top-12 max-sm:top-0 left-0 flex flex-col justify-around min-h-[40vh] transition-all duration-700 ease-in ${
+                className={`absolute top-0 left-2 h-full flex flex-col justify-around transition-all duration-700 ease-in ${
                   active === index ? "opacity-100" : "opacity-0"
                 }`}
               >

@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import React, { useRef } from "react";
-import Reveal from "../shared/Reveal";
 
 const Hero = () => {
   const containerRef = useRef(null);
@@ -43,10 +42,10 @@ const Hero = () => {
         })}
       </div>
 
-      <div className="content z-[30] flex w-full md:pl-[5%]  max-sm:px-6">
+      <div className="content z-[30] flex w-full px-[10%] max-lg:px-[5%] max-sm:px-6">
         <motion.div
-          initial={{ x: -100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.7, ease: "easeIn", delay: 0.4 }}
           className="flex flex-col justify-end w-1/2 gap-6 max-lg:w-full left description mb-12"
         >
@@ -58,7 +57,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1 }}
-            className="font-['helvetica'] font-medium text-lg max-lg:text-base text-gray-600 w-4/5 text-justify"
+            className="font-['helvetica'] font-medium text-lg max-lg:text-sm text-gray-600 w-4/5 text-justify"
           >
             Digicrowd Solution, the premier digital marketing company, offers
             custom-made solutions tailored to align with your business's unique
@@ -68,19 +67,19 @@ const Hero = () => {
           </motion.p>
           <div className="button-container flex items-center gap-4">
             <motion.button
-            name="Book Demo"
-              initial={{ scale: 0, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.3, delay: 1 }}
-              className="button bg-accent text-white" 
+              name="Book Demo"
+              initial={{ y: 30, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 1 }}
+              className="button bg-accent text-white"
             >
               Book Demo
             </motion.button>
             <motion.button
-            name="Request a Call"
-              initial={{ scale: 0, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.3, delay: 1 }}
+              name="Request a Call"
+              initial={{ y: 30, opacity: 0 }}
+              animate={{ y : 0, opacity: 1 }}
+              transition={{ duration: 0.5, delay: 1 }}
               className="button text-accent"
             >
               Request a Call
@@ -90,8 +89,8 @@ const Hero = () => {
 
         <div className="graphic w-1/2 max-lg:hidden max-h-screen flex bg-transparent mb-8">
           <motion.img
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
             src="/assets/home-illustration.svg"
             alt="hero-graphic"

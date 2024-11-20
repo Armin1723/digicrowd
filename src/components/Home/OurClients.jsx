@@ -58,11 +58,11 @@ const OurClients = () => {
   ];
 
   return (
-    <div className="flex flex-col w-full items-center justify-center py-8 bg-accent-light">
+    <div className="flex flex-col w-full items-center justify-center py-4 border border-black">
       <p className="heading text-4xl max-lg:text-2xl font-wix my-4">
         Our Clients
       </p>
-      <p className="text-center w-1/2 max-lg:w-3/4 max-sm:w-[90%] font-['helvetica']">
+      <p className="text-center w-1/2 max-lg:w-3/4 max-sm:w-[90%] text-lg max-sm:text-sm font-['helvetica']">
         For excellent digital marketing strategies created especially for IT
         firms, our clients count on us. Our expertise lies in devising and
         implementing the best digital marketing strategies that improve their
@@ -70,7 +70,7 @@ const OurClients = () => {
         seamless integration with the ever changing IT sector.
       </p>
         <div
-          className="my-8 cursor-crosshair"
+          className="my-4 cursor-crosshair"
         >
           <MarqueeItem images={images} />
         </div>

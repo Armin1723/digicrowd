@@ -16,14 +16,14 @@ const IntroFooter = () => {
   ];
 
   return (
-    <div className="w-full px-[10%] max-lg:px-[5%] max-sm:px-6 !bg-accent-light flex flex-col max-sm:flex-col-reverse justify-around max-sm:justify-around items-center max-h-dvh min-h-[60vh] relative select-none">
+    <div className="w-full px-[10%] max-lg:px-[5%] max-sm:px-6 !bg-accent-light flex flex-col max-lg:flex-col-reverse justify-around max-sm:justify-around items-center max-h-dvh min-h-[60vh] max-lg:min-h-[40vh] relative select-none">
       <img
         loading="lazy"
         src="/footer/overlay-1-no-background.png"
         alt="overlay"
         className="absolute bottom-0 left-0 w-full h-auto z-[-0] aspect-video object-cover select-none"
       />
-      <div className="banner-display container flex min-w-full overflow-x-hidden z-[30] select-none">
+      <div className="banner-display container flex min-w-full z-[30] select-none">
         <div className="flex flex-shrink-0">
           {texts.map((text, index) => {
             return (
@@ -53,12 +53,12 @@ const IntroFooter = () => {
           })}
         </div>
       </div>
-      <div className="newsletter w-[90%] max-sm:w-full flex max-sm:flex-col items-center justify-center rounded-lg bg-dark-blue bg-opacity-60 max-sm:bg-opacity-90 min-h-[20vh] z-[30] my-4 py-4 border border-neutral-600 text-white shadow-xl">
+      <div className="newsletter w-[90%] max-lg:w-full flex max-sm:flex-col items-center justify-center rounded-lg bg-dark-blue bg-opacity-60 max-sm:bg-opacity-90 min-h-[20vh] z-[30] my-4 py-4 border border-neutral-600 text-white shadow-xl">
         <div className="flex flex-col max-lg:px-4 w-1/2 max-sm:my-4 max-sm:w-full items-center justify-center gap-2">
-          <p className="text-white w-full text-center heading font-wix !text-4xl max-lg:!text-3xl max-sm:!text-2xl">
+          <p className="text-white w-full text-center heading font-wix !text-4xl max-lg:!text-2xl max-sm:!text-xl">
             Want to stay updated?
           </p>
-          <p className="text-lg max-sm:text-sm w-full text-center text-neutral-400">
+          <p className="text-lg max-lg:text-base max-sm:text-sm w-full text-center text-neutral-400">
             Subscribe to our newsletter to stay in the loop.
           </p>
         </div>

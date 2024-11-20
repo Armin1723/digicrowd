@@ -20,7 +20,7 @@ const CTA = () => {
         x: e.clientX,
         y: e.clientY,
       });
-      setCursorVariant("text"); 
+      setCursorVariant("text");
     };
 
     const handleScroll = () => {
@@ -74,10 +74,10 @@ const CTA = () => {
         to="/about"
         onMouseEnter={textEnter}
         onMouseLeave={textLeave}
-        className="cta-container cursor-none flex flex-col items-center gap-2 w-full  text-white px-6 py-20 "
+        className="cta-container cursor-none flex flex-col items-center gap-2 w-full text-white px-6 py-20 max-lg:py-12 max-sm:py-6"
       >
-        <div className="text-container relative">
-          <p className="text-[4.5rem] leading-[4.5rem] my-4 uppercase font-wix font-[900] mix-blend-difference z-[10]">
+        <div className="text-container relative text-center">
+          <p className="text-[4.5rem] leading-[4.5rem] max-lg:text-6xl max-sm:text-4xl my-4 uppercase font-wix font-[900] mix-blend-difference z-[10]">
             Ready to Talk More??
           </p>
         </div>
@@ -86,21 +86,22 @@ const CTA = () => {
           animate={cursorVariant}
           transition={{ duration: 0.4, ease: "easeOut" }}
           id="cursor"
-          className="fixed top-0 left-0 group z-[99] -right-32--top-1/2 w-[150px] aspect-square pointer-events-none mix-blend-difference flex items-center justify-center text-xl transition-al duratio-300 rounded-full bg-accent-light text-black font-bold "
+          className="fixed top-0 left-0 group z-[99] w-[150px] aspect-square pointer-events-none mix-blend-difference flex items-center justify-center text-xl transition-al duratio-300 rounded-full bg-accent-light text-black font-bold "
         >
           <div className="text-4xl font-[900] -rotate-45">
             <p>
               <span className="-rotate-45 transition-all duration-300">→</span>{" "}
             </p>
-            {/* <p>Now</p> */}
           </div>
         </motion.div>
-        <p className="w-3/5 text-balance max-lg:w-4/5 max-sm:w-[90%] font-['helvetica'] text-gray-300">
-          Get a free consultation with Digicrowd right now. We are your go-to
-          source for excellent Top IT & digital marketing services company.
-          Discover tactics that will take your company to new heights with our
-          exceptional services.
-        </p>
+        <div className="w-3/5  max-lg:w-4/5 max-sm:w-[95%] ">
+          <p className="w-full text-center font-['helvetica'] text-gray-300 text-lg max-lg:text-base">
+            Get a free consultation with Digicrowd right now. We are your go-to
+            source for excellent Top IT & digital marketing services company.
+            Discover tactics that will take your company to new heights with our
+            exceptional services.
+          </p>
+        </div>
       </div>
     </motion.div>
   );

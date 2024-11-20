@@ -13,7 +13,7 @@ const FlipLink = ({ children, to = "/", otherClasses = "" }) => {
         to={to}
         className={`relative block overflow-hidden whitespace-nowrap ${otherClasses}`}
         style={{
-          lineHeight: 0.85,
+          lineHeight: 1.4,
         }}
       >
         <div>

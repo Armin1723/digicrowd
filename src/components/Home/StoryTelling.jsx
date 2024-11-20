@@ -84,10 +84,10 @@ const TextParallaxContent = ({ imgUrl, children }) => {
             ref={introRef}
             className="flex flex-col items-center justify-center text-white z-[100]"
           >
-            <p className="text-center text-4xl font-bold md:text-7xl max-w-[90vw] ">
+            <p className="text-center text-4xl font-bold md:text-7xl max-w-[90vw] font-wix">
               Our Process
             </p>
-            <p className="text-center max-sm:text-justify mb-4 text-lg max-sm:text-base text-neutral-300 max-sm:text-neutral-400 w-3/5 max-lg:w-4/5 max-sm:w-full max-sm:px-6 py-6 ">
+            <p className="text-center max-sm:text-justify mb-4 text-lg max-sm:text-base text-neutral-300 max-sm:text-neutral-400 w-3/5 max-lg:w-4/5 max-sm:w-full max-sm:px-6 py-6 font-['helvetica'] ">
               At Digicrowd Solution, our digital marketing process is
               intricately crafted to provide the best digital marketing services
               & solutions. Our process kicks off with a comprehensive analysis
@@ -201,13 +201,13 @@ const OverlayCopy = ({ index, subheading, heading, icon, description }) => {
           alt="icon"
           className="w-24 aspect-square object-cover my-4 rounded-full border border-black"
         />
-        <p className="mb-2 text-center text-4xl md:mb-4 md:text-6xl font-bold">
+        <p className="mb-2 text-center text-4xl md:mb-4 md:text-6xl font-bold font-wix">
           {index + 1}. {subheading}
         </p>
         <p className="text-center text-xl font-semibold md:text-3xl max-w-[90vw] ">
           {heading}
         </p>
-        <p className="text-center py-8 w-1/2 max-lg:w-3/4 max-sm:w-[90%] text-xl max-sm:text-lg">
+        <p className="text-center py-8 w-1/2 max-lg:w-3/4 max-sm:w-[90%] text-xl max-sm:text-lg font-['helvetica'] ">
           {description}
         </p>
       </div>
@@ -217,16 +217,16 @@ const OverlayCopy = ({ index, subheading, heading, icon, description }) => {
 
 const OtherContent = () => (
   <div className="mx-auto grid max-w-5xl grid-cols-1 gap-4 px-4 py-12 max-sm:py-4 md:grid-cols-12">
-    <h2 className="col-span-1 heading !text-4xl font-bold md:col-span-4">
+    <h2 className="col-span-1 heading !text-4xl max-lg:!text-2xl max-sm:!text-xl font-bold md:col-span-4 font-wix">
       Our Process
     </h2>
-    <div className="col-span-1 md:col-span-8">
-      <p className="mb-4 text-lg text-neutral-600">
+    <div className="col-span-1 md:col-span-8 font-['helvetica'] ">
+      <p className="mb-4 text-lg max-lg:text-base max-sm:text-sm text-neutral-600">
         We tailor personalized solutions for your brand that meet your unique
         requirements. And fulfil effective and optimized approaches for digital
         marketing.
       </p>
-      <p className="mb-8 text-lg text-neutral-600 ">
+      <p className="mb-8 text-lg max-lg:text-base max-sm:text-sm text-neutral-600 ">
         We provide a wide range of services that help you to grow your business
         and reach your goals. We are here to help you with the best solutions
         for your business
@@ -234,7 +234,7 @@ const OtherContent = () => (
       <div className="button-container flex w-4/5 items-start my-6">
         <button
           aria-label="Know More"
-          className="rounded-lg px-6 py-2 text-lg font-bold font-wix text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300"
+          className="rounded-lg px-6 py-2 text-lg max-lg:textt-base max-sm:text-sm font-bold font-wix text-white bg-blue-600 hover:bg-blue-700 transition-all duration-300"
         >
           Know More
         </button>

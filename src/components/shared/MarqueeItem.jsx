@@ -19,13 +19,13 @@ const MarqueeItem = ({ images, from = 0, to = "-100%" }) => {
         onHoverEnd={() => {
           setIsHovered(false);
         }}
-        className={`flex flex-shrink-0 gap-4`}
+        className={`flex flex-shrink-0 gap-4 `}
       >
         {images.map((image, index) => {
           return (
             <img
                 loading="lazy"
-              className="max-sm:h-20 max-sm:aspect-video mix-blend-difference text-black fill-black stroke-black hover:scale-105 max-lg:scale-125 max-lg:hover:scale-150 transition-all duration-500"
+              className="max-sm:h-16 max-lg:h-20 max-sm:aspect-video mix-blend-difference text-black fill-black stroke-black hover:scale-105 transition-all duration-500"
               src={image.image}
               alt={image.title}
               key={index}
@@ -52,7 +52,7 @@ const MarqueeItem = ({ images, from = 0, to = "-100%" }) => {
           return (
             <img
                 loading="lazy"
-              className="max-sm:h-20 max-sm:aspect-video mix-blend-difference text-black fill-black stroke-black hover:scale-105 max-lg:scale-125 max-lg:hover:scale-150 transition-all duration-500"
+              className="max-sm:h-16 max-lg:h-20 max-sm:aspect-video mix-blend-difference text-black fill-black stroke-black hover:scale-105 transition-all duration-500"
               src={image.image}
               alt={image.title}
               key={index}

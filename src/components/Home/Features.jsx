@@ -5,22 +5,19 @@ const Features = () => {
   const cardsData = [
     {
       title: "Proven Excellence",
-      subtitle:
-        "Meritorious by experience.",
+      subtitle: "Meritorious by experience.",
       icon: "/assets/features-icon-1.webp",
       href: "/",
     },
     {
       title: "Marketing Solutions",
-      subtitle:
-        "Your One Stop Solution.",
+      subtitle: "Your One Stop Solution.",
       icon: "/assets/features-icon-2.webp",
       href: "/",
     },
     {
       title: "Innovative Strategies",
-      subtitle:
-        "Innovate to elevate.",
+      subtitle: "Innovate to elevate.",
       icon: "/assets/features-icon-3.webp",
       href: "/",
     },
@@ -33,7 +30,7 @@ const Features = () => {
       </p>
       <div className="container flex max-lg:flex-col-reverse items-center justify-between">
         <div className="text-and-cards w-2/3 max-lg:w-full">
-          <div className="content  font-['helvetica'] py-8 text-justify">
+          <div className="content text-lg max-sm:text-sm font-['helvetica'] py-8 text-justify">
             Digicrowd Solution stands out as the Best Digital Marketing Company
             of preference for numerous reasons. With a wealth of experience and
             a proven track record, they offer a specialized and affordable
@@ -50,7 +47,7 @@ const Features = () => {
             provider company and a reliable partner committed to turning digital
             aspirations into tangible success.
           </div>
-          <div className="cards w-full flex max-sm:flex-col gap-8 max-sm:gap-4">
+          <div className="cards w-full flex max-sm:flex-col gap-8 max-sm:gap-4 max-sm:px-4">
             {cardsData.map((card, index) => {
               return (
                 <HoverCard
@@ -65,9 +62,9 @@ const Features = () => {
           </div>
         </div>
 
-        <div className="graphic flex items-center">
+        <div className="graphic flex items-center max-lg:mt-4">
           <img
-                loading="lazy"
+            loading="lazy"
             src="/assets/features-graphic.webp"
             alt="features-graphic"
             className="object-fill w-full flex-1 aspect-[2/3] max-h-[50vh]"

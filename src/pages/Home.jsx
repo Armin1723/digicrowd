@@ -4,7 +4,6 @@ import Header from "../components/shared/Header";
 import WhoWeAre from "../components/Home/WhoWeAre";
 import OurCertificates from "../components/Home/OurCertificates";
 import OurServices from "../components/Home/OurServices";
-import ServicePages from "../components/Home/ServicePages";
 import OurClients from "../components/Home/OurClients";
 import CTA from "../components/Home/CTA";
 import Features from "../components/Home/Features";
@@ -14,6 +13,8 @@ import Blogs from "../components/Home/Blogs";
 import Testimonials from "../components/Home/Testimonials";
 import Footer from "../components/shared/Footer";
 import IntroFooter from "../components/shared/IntroFooter";
+import ServicesMobile from "../components/Home/ServicesMobile";
+import ServicesAlt2 from "../components/Home/ServicesAlt2";
 
 const Home = () => {
   return (
@@ -23,8 +24,10 @@ const Home = () => {
       <WhoWeAre />
       <OurCertificates />
       <OurServices />
-      <ServicePages />
       <ServicesAlter />
+      <ServicesAlt2 />
+      <ServicesMobile />
+      {/* <ServiceCards /> */}
       <OurClients />
       <CTA />
       <Features />
