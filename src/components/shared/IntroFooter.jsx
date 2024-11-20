@@ -16,14 +16,14 @@ const IntroFooter = () => {
   ];
 
   return (
-    <div className="w-full px-[10%] max-lg:px-[5%] max-sm:px-6 !bg-accent-light flex flex-col max-lg:flex-col-reverse justify-around max-sm:justify-around items-center max-h-dvh min-h-[60vh] max-lg:min-h-[40vh] relative select-none">
+    <div className="w-full px-[10%] max-lg:px-[5%] max-sm:px-6 !bg-accent-light flex flex-col max-lg:flex-col-reverse justify-around max-sm:justify-around items-center max-h-dvh min-h-[60vh] max-lg:min-h-[40vh] relative select-none ">
       <img
         loading="lazy"
         src="/footer/overlay-1-no-background.png"
         alt="overlay"
         className="absolute bottom-0 left-0 w-full h-auto z-[-0] aspect-video object-cover select-none"
       />
-      <div className="banner-display container flex min-w-full z-[30] select-none">
+      <div className="banner-display container flex min-w-full z-[30] select-none overflow-hidden">
         <div className="flex flex-shrink-0">
           {texts.map((text, index) => {
             return (
@@ -32,9 +32,9 @@ const IntroFooter = () => {
                 animate={{ x: "-100%" }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 key={index}
-                className="flex flex-col items-center justify-center flex-shrink-0 min-w-[10%] text-white !bg-clip-text bg-gradient-to-br from-white to-dark-blue/50 max-sm:bg-white max-sm:text-shadow font-['arial']"
+                className="flex flex-col items-center justify-center flex-shrink-0 min-w-[10%] text-white max-sm:text-shadow font-['arial']"
               >
-                <p className="text-2xl font-extrabold ">#{text}</p>
+                <p className="text-2xl  max-sm:text-base font-extrabold ">#{text}</p>
               </motion.div>
             );
           })}
@@ -45,9 +45,9 @@ const IntroFooter = () => {
                 animate={{ x: "-100%" }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 key={index}
-                className="flex flex-col items-center justify-center flex-shrink-0 min-w-[10%] text-white !bg-clip-text bg-gradient-to-br from-white to-dark-blue/50 max-sm:bg-white max-sm:text-shadow font-['arial']"
+                className="flex flex-col items-center justify-center flex-shrink-0 min-w-[10%] text-white font-['arial']"
               >
-                <p className="text-2xl font-extrabold">#{text}</p>
+                <p className="text-2xl max-sm:text-base font-extrabold">#{text}</p>
               </motion.div>
             );
           })}

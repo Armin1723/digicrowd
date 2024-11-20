@@ -14,7 +14,6 @@ import Testimonials from "../components/Home/Testimonials";
 import Footer from "../components/shared/Footer";
 import IntroFooter from "../components/shared/IntroFooter";
 import ServicesMobile from "../components/Home/ServicesMobile";
-import ServicesAlt2 from "../components/Home/ServicesAlt2";
 
 const Home = () => {
   return (
@@ -25,7 +24,7 @@ const Home = () => {
       <OurCertificates />
       <OurServices />
       <ServicesAlter />
-      <ServicesAlt2 />
+      {/* <ServicesAlt2 /> */}
       <ServicesMobile />
       {/* <ServiceCards /> */}
       <OurClients />

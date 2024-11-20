@@ -35,7 +35,7 @@ const Footer = () => {
   }, [isInView]);
 
   return (
-    <footer className="relative bg-[#010202] text-white min-h-dvh overflow-hidden flex flex-col justify-between items-center">
+    <footer className="relative bg-[#010202] text-white min-h-dvh flex flex-col justify-between items-center overflow-hidden">
       {/* Upper section with icons/links */}
       <div className="flex max-lg:flex-col items-start gap-4 py-8 max-sm:py-2 w-4/5 max-sm:w-full max-sm:px-4 max-sm:gap-6 justify-start">
         <div className="flex flex-col flex-wrap justify-center gap-4 w-1/2 max-lg:w-full">

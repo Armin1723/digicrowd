@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { motion, useScroll, useTransform, useInView } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const processData = [
   {
@@ -33,13 +33,8 @@ const processData = [
 ];
 
 const StoryTelling = () => {
-  const containerRef = useRef(null);
-
   return (
-    <div
-      ref={containerRef}
-      className="flex flex-col items-center w-full hide-scrollbar"
-    >
+    <div className="flex flex-col items-center hide-scrollbar w-full">
       <TextParallaxContent imgUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
         <OtherContent />
       </TextParallaxContent>
@@ -60,7 +55,7 @@ const TextParallaxContent = ({ imgUrl, children }) => {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.75]);
 
   return (
-    <div>
+    <div className="w-full">
       <div
         className="relative w-full"
         style={{
@@ -141,14 +136,14 @@ const StickyImage = ({ imgUrl }) => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         height: "100vh",
-        width: "100vw",
-        top: -1,
+        width: "100%",
+        top: 0,
         scale,
         opacity,
         borderRadius: radius,
       }}
       ref={targetRef}
-      className="sticky z-[99] overflow-hidden w-full "
+      className="sticky z-[99] w-full overflow-hidden"
     >
       <motion.div
         className="absolute inset-0 z-[100] bg-neutral-950/70"
@@ -194,7 +189,9 @@ const OverlayCopy = ({ index, subheading, heading, icon, description }) => {
       ref={targetRef}
       className="z-[101] relative text-lg md:text-xl flex w-full flex-col items-center justify-start text-white"
     >
-      <div className="sticky top-0 w-full flex flex-col items-center justify-center h-screen ">
+      <div style={{
+        height: `${SLIDE_SIZE}vh`,
+      }} className="sticky top-0 w-full flex flex-col items-center justify-center ">
         <img
           loading="lazy"
           src={icon}
@@ -204,7 +201,7 @@ const OverlayCopy = ({ index, subheading, heading, icon, description }) => {
         <p className="mb-2 text-center text-4xl md:mb-4 md:text-6xl font-bold font-wix">
           {index + 1}. {subheading}
         </p>
-        <p className="text-center text-xl font-semibold md:text-3xl max-w-[90vw] ">
+        <p className="text-center text-xl font-semibold md:text-3xl max-w-[90%] ">
           {heading}
         </p>
         <p className="text-center py-8 w-1/2 max-lg:w-3/4 max-sm:w-[90%] text-xl max-sm:text-lg font-['helvetica'] ">

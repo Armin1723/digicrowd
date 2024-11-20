@@ -55,7 +55,7 @@ const Blogs = () => {
 
   return (
     <div className="flex flex-col w-full px-[10%] max-lg:px-6 relative py-6 max-sm:pt-0 bg-gradient-to-b from-transparent to-accent-light/60">
-      <p className="heading text-4xl max-sm:text-2xl !my-0">Our Blogs</p>
+      <p className="heading !text-4xl max-sm:!text-2xl !my-0">Our Blogs</p>
 
       <div className="controls flex gap-4 my-4 w-full justify-end select-none">
         <div

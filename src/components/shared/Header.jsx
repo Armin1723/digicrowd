@@ -96,7 +96,7 @@ const Header = () => {
           />
         </Link>
 
-        <div className="links-container flex gap-6 max-lg:gap-4 text-lg items-center max-lg:hidden font-sans">
+        <div className="links-container flex gap-6 max-lg:gap-4 text-lg items-center max-lg:hidden">
           <FlipLink to="/about" otherClasses="text-gray-700">
             About Us
           </FlipLink>
@@ -157,7 +157,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="hidden max-lg:flex h-full items-center justify-center">
+        <div className="hidden max-lg:flex items-center justify-center">
           <NavSmall />
         </div>
       </div>

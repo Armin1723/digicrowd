@@ -78,6 +78,7 @@ const ServicesAlter = () => {
         {cardsData.map((card, index) => {
           return (
             <div
+            key={index}
               className="absolute inset-0 flex flex-col items-center justify-center gap-4 rounded-md p-4 transition-all duration-500 ease-in-out"
               style={{
                 transform: `translateX(${activeIndex === index ? 0 : "100%"})`,
