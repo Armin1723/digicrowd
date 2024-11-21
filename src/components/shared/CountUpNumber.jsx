@@ -27,7 +27,7 @@ const CountUpNumber = ({ from = 0, to = 100, duration = 1 , suffix = ''}) => {
   }, [isInView, from, to, duration]);
 
   return (
-    <motion.div ref={ref} className="text-4xl font-bold">
+    <motion.div ref={ref} className="font-bold">
       {Math.floor(count)}{suffix}
     </motion.div>
   );

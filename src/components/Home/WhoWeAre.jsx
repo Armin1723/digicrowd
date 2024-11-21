@@ -33,10 +33,10 @@ const WhoWeAre = () => {
               loading="lazy"
               src="/assets/who-we-are-icon-1.webp"
               alt="graphic"
-              className="border-2 rounded-md border-black/60 w-20 h-20 "
+              className="border-2 rounded-md border-black/60 w-20 max-sm:w-12 aspect-square"
             />
             <div className="flex flex-col">
-              <div className="font-bold text-3xl font-wix">
+              <div className="font-bold text-3xl max-lg:text-2xl max-sm:!text-xl font-wix">
                 <CountUpNumber to={1500} suffix={"+"} />
               </div>
               <p>Clients Worldwide.</p>
@@ -48,10 +48,10 @@ const WhoWeAre = () => {
               loading="lazy"
               src="/assets/who-we-are-icon-2.webp"
               alt="graphic"
-              className="border-2 rounded-md border-black/60 w-20 h-20"
+              className="border-2 rounded-md border-black/60 w-20 max-sm:w-12 aspect-square"
             />
             <div className="flex flex-col ">
-              <div className="font-bold text-3xl font-wix">
+              <div className="font-bold text-3xl max-lg:text-2xl max-sm:!text-xl font-wix">
                 <CountUpNumber to={90} suffix={"%"} />
               </div>
               <p>Customer Retention.</p>
