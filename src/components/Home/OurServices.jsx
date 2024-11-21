@@ -5,7 +5,7 @@ const OurServices = () => {
   return (
     <div className="w-full mt-[-10vh] pt-[15vh] flex flex-col gap-4 justify-end items-center bg-accent-light">
       <p className="heading font-wix !text-4xl max-lg:!text-2xl">Our Services</p>
-      <p className="w-2/3 text-center max-lg:w-[90%] max-sm:w-full px-6 font-['helvetica'] text-lg max-lg:text-sm">
+      <p className="w-2/3 text-center max-lg:w-[90%] max-sm:w-full px-6 font-['helvetica'] text-lg max-lg:text-sm py-4">
         Experience the epitome of the best digital marketing consultation
         services through our diverse services. As a leading Best Digital
         Marketing Company, we offer unparalleled expertise to enhance your

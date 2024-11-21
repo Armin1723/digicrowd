@@ -1,0 +1,9 @@
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Content-Type = "font/ttf"
+
+[[headers]]
+  for = "/fonts/*.ttf"
+  [headers.values]
+    Content-Type = "font/ttf"

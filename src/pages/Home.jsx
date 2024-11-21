@@ -26,7 +26,6 @@ const Home = () => {
       <ServicesAlter />
       {/* <ServicesAlt2 /> */}
       <ServicesMobile />
-      {/* <ServiceCards /> */}
       <OurClients />
       <CTA />
       <Features />
