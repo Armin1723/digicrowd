@@ -1,9 +1,9 @@
 [[headers]]
-  for = "/fonts/*"
+  for = "./public/fonts/*"
   [headers.values]
     Content-Type = "font/ttf"
 
 [[headers]]
-  for = "/fonts/*.ttf"
+  for = "./public/fonts/*.ttf"
   [headers.values]
     Content-Type = "font/ttf"

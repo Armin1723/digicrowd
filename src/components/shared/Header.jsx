@@ -96,7 +96,7 @@ const Header = () => {
           />
         </Link>
 
-        <div className="links-container flex gap-6 max-lg:gap-4 text-lg items-center max-lg:hidden">
+        <div className="links-container flex gap-6 max-lg:gap-4 text-lg items-center max-lg:hidden font-wix">
           <FlipLink to="/about" otherClasses="text-gray-700">
             About Us
           </FlipLink>
@@ -117,7 +117,7 @@ const Header = () => {
                   return (
                     <div
                       key={index}
-                      className="service-container flex flex-col gap-4 font-sans "
+                      className="service-container flex flex-col gap-4 "
                     >
                       <p className="font-bold text-lg ">{service.name}</p>
                       {service.subServices.map((subService, index) => {

@@ -5,7 +5,7 @@ import AccordionItem from "../shared/AccordionItem";
 const ServicesMobile = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   return (
-    <div className="flex w-[1025px]:hidden flex-col w-full px-12 max-sm:px-6 gap-4 bg-accent-light">
+    <div className="flex md:hidden flex-col w-full px-12 max-sm:px-6 gap-4 bg-accent-light">
       <div className="accordionContainer flex flex-col ">
         {cardsData.map((card, index) => {
           return (
