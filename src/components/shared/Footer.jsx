@@ -146,7 +146,7 @@ const Footer = () => {
         <motion.div
           loading="lazy"
           style={{
-            background: "url('/footer/overlay-gif-3.webp') center",
+            background: "url('/footer/overlay-gif.webp') center",
           }}
           className="text-[15.8vw] w-full text-center !bg-clip-text font-['arial'] text-transparent bg-gradient-to-b from-[#124d69 from-dark-blue to-[#008aff] tracking-tight max-sm:tracking-normal font-extrabold leading-none"
         >

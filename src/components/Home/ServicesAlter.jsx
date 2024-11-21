@@ -19,16 +19,18 @@ const ServicesAlter = () => {
   return (
     <motion.div
       ref={ref}
-      variants={{
-        hidden: { y: 200, opacity: 0 },
-        visible: { y: 0, opacity: 1 },
-      }}
-      initial="hidden"
-      animate={motionControls}
-      transition={{ duration: 0.4, delay: 0.3 }}
       className="flex max-lg:hidden w-full max-sm:py-2 px-4 min-h-[60vh] gap-4 items-center bg-accent-light"
     >
-      <div className="link-container flex flex-col justify-center min-h-[70vh] items-center gap-4 w-1/2 max-sm:w-full px-12 max-lg:px-8 max-sm:px-4 max-sm:h-1/2 relative z-[20]">
+      <motion.div
+        variants={{
+          hidden: { y: 200, opacity: 0 },
+          visible: { y: 0, opacity: 1 },
+        }}
+        initial="hidden"
+        animate={motionControls}
+        transition={{ duration: 0.4, delay: 0.3 }}
+        className="link-container flex flex-col justify-center min-h-[70vh] items-center gap-4 w-1/2 max-sm:w-full px-12 max-lg:px-8 max-sm:px-4 max-sm:h-1/2 relative z-[20]"
+      >
         {cardsData.slice(0, 4).map((card, index) => {
           return (
             <motion.div
@@ -71,14 +73,23 @@ const ServicesAlter = () => {
             />
           );
         })} */}
-      </div>
+      </motion.div>
 
-      <div className="our-expertise overflow-hidden overflow-y-visible w-1/2 max-sm:w-full min-h-[70vh] flex flex-col items-center justify-center relative">
+      <motion.div
+        variants={{
+          hidden: { y: 200, opacity: 0 },
+          visible: { y: 0, opacity: 1 },
+        }}
+        initial="hidden"
+        animate={motionControls}
+        transition={{ duration: 0.4, delay: 0.3 }}
+        className="our-expertise overflow-hidden overflow-y-visible w-1/2 max-sm:w-full min-h-[70vh] flex flex-col items-center justify-center relative"
+      >
         {/* Absolute positioned sub-categories that pan out on hover */}
         {cardsData.map((card, index) => {
           return (
             <div
-            key={index}
+              key={index}
               className="absolute inset-0 flex flex-col items-center justify-center gap-4 rounded-md p-4 transition-all duration-500 ease-in-out"
               style={{
                 transform: `translateX(${activeIndex === index ? 0 : "100%"})`,
@@ -115,7 +126,7 @@ const ServicesAlter = () => {
             </div>
           );
         })}
-      </div>
+      </motion.div>
     </motion.div>
   );
 };

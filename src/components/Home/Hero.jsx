@@ -10,6 +10,8 @@ const Hero = () => {
     " Branding Srategy",
     " Search Engine Optimisation",
     " Social Media Marketing",
+    " Digital Marketing",
+    " Web Development",
   ];
   return (
     <div
@@ -21,7 +23,7 @@ const Hero = () => {
           return (
             <div
               key={index}
-              className=" flex items-center justify-center gap-12 text-accent-dark z-[20] text-[28vh] leading-[21vh] uppercase font-[900] tracking-tight opacity-50 text-nowrap"
+              className=" flex items-center justify-center gap-12 text-accent-dark z-[20] text-[28vh] leading-[21vh] max-sm:text-[20vh] max-sm:leading-[16vh] uppercase font-[900] tracking-tight opacity-50 text-nowrap"
             >
               <motion.p
                 initial={{ x: index % 2 === 0 ? "-100%" : 0 }}
@@ -56,7 +58,7 @@ const Hero = () => {
           <motion.p
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1 }}
+            transition={{ delay: 1, ease: 'easeInOut' }}
             className="font-['helvetica'] font-medium text-lg max-lg:text-sm text-gray-600 w-4/5 text-justify"
           >
             Digicrowd Solution, the premier digital marketing company, offers

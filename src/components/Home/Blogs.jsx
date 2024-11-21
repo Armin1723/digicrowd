@@ -73,7 +73,7 @@ const Blogs = () => {
           →
         </div>
       </div>
-      <div className="blogs-container flex my-4 py-4 w-full gap-4 justify-start max-sm:gap-2 overflow-hidden relative">
+      <div className="blogs-container flex my-4 py-4 w-full justify-start overflow-hidden relative">
         {blogsData.map((blog, index) => (
           <motion.div
             key={index}
@@ -81,32 +81,34 @@ const Blogs = () => {
               x: `-${curr * 100}%`,
             }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            className="blog-card bg-white shadow-md rounded-lg group cursor-pointer min-w-[33%] max-sm:min-w-[50%] max-sx:min-w-[100%] flex flex-col p-4 max-sm:p-2 transition-all duration-300 ease-in scroll-snap-align-start"
+            className="blog-card px-4 max-sm:px-2 group cursor-pointer min-w-[33.33%] max-sm:min-w-[50%] flex flex-col items-stretch transition-all duration-300 ease-in snap-mandatory"
           >
-            <div className="image-container rounded-md group-hover:!-translate-y-4 transition-all duration-300 ease-in w-full aspect-[16/9] border overflow-hidden my-4">
-              <img
-                loading="lazy"
-                src={`/assets/blog-${
-                  (index % (blogsData.length / 2)) + 1
-                }.webp`}
-                alt="logo"
-                className="group-hover:scale-110 transition-all duration-500 ease-out object-cover w-full h-full"
-              />
+            <div className="wrapper flex flex-col flex-1 bg-white p-4 max-sm:p-2 shadow-md rounded-lg">
+              <div className="image-container rounded-md group-hover:!-translate-y-4 transition-all duration-300 ease-in w-full aspect-[16/9] border overflow-hidden my-4">
+                <img
+                  loading="lazy"
+                  src={`/assets/blog-${
+                    (index % (blogsData.length / 2)) + 1
+                  }.webp`}
+                  alt="logo"
+                  className="group-hover:scale-110 transition-all duration-500 ease-out object-cover w-full h-full"
+                />
+              </div>
+              <p className="text-gray-700 bg-accent-light group-hover:!-translate-y-4 transition-all duration-300 ease-in rounded-lg border border-gray-700 px-3 py-1 text-xs w-fit my-1 uppercase">
+                Tech Blog
+              </p>
+              <p className="text-xl group-hover:!-translate-y-4 transition-all duration-300 ease-in max-lg:text-lg max-sm:text-sm max-sm:leading-[1rem] my-2 font-semibold font-wix">
+                {blog.title.split(" ").slice(0, 5).join(" ")}...
+              </p>
+              <p className="text-gray-400 group-hover:!-translate-y-4 transition-all duration-300 ease-in text-sm max-sm:text-xs">
+                {blog.date}
+              </p>
+              <p className="py-4 group-hover:!-translate-y-4 transition-all duration-300 ease-in max-sm:py-1 max-sm:text-xs text-sm text-neutral-600 md:pr-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                officia, vero aut esse ullam ipsam unde consequatur ab
+                repellendus illum!
+              </p>
             </div>
-            <p className="text-gray-700 group-hover:!-translate-y-4 transition-all duration-300 ease-in rounded-lg border border-gray-700 px-3 py-1 text-xs w-fit my-1 uppercase">
-              Tech Blog
-            </p>
-            <p className="text-xl group-hover:!-translate-y-4 transition-all duration-300 ease-in max-lg:text-lg max-sm:text-sm max-sm:leading-[1rem] my-2 font-semibold font-wix">
-              {blog.title.split(" ").slice(0, 5).join(" ")}...
-            </p>
-            <p className="text-gray-400 group-hover:!-translate-y-4 transition-all duration-300 ease-in text-sm max-sm:text-xs">
-              {blog.date}
-            </p>
-            <p className="py-4 group-hover:!-translate-y-4 transition-all duration-300 ease-in max-sm:py-1 max-sm:text-xs text-sm text-neutral-600 md:pr-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              officia, vero aut esse ullam ipsam unde consequatur ab repellendus
-              illum!
-            </p>
           </motion.div>
         ))}
       </div>

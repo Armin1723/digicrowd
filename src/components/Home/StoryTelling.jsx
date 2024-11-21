@@ -72,7 +72,7 @@ const TextParallaxContent = ({ imgUrl, children }) => {
           <motion.div
             style={{
               height: `calc(${SLIDE_SIZE}vh)`,
-              y,
+              // y,
               opacity,
               scale,
             }}

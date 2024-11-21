@@ -4,14 +4,12 @@ import {
   SheetClose,
   SheetContent,
   SheetDescription,
-  SheetFooter,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "../ui/sheet";
 import AnimatedHamburger from "./AnimatedHamburger";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 
 const NavSmall = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -22,16 +20,19 @@ const NavSmall = () => {
       <SheetTrigger>
         <AnimatedHamburger />
       </SheetTrigger>
-      <SheetContent side={"left"} className="w-full !bg-white z-[100] flex flex-col justify-between !px-0">
+      <SheetContent
+        side={"left"}
+        className="w-full !bg-white z-[100] flex flex-col justify-between !px-0"
+      >
         <SheetHeader>
-          <SheetTitle>
+          <SheetTitle className='w-full'>
             <SheetClose asChild>
-              <Link to="/" className="logo">
+              <Link to="/" className="logo w-2/3">
                 <img
                   loading="lazy"
                   src="/assets/logo.webp"
                   alt="logo"
-                  className="object-cover max-lg:w-3/4 px-2"
+                  className="object-cover w-1/2 px-2"
                 />
               </Link>
             </SheetClose>
@@ -119,18 +120,6 @@ const NavSmall = () => {
             </nav>
           </SheetDescription>
         </SheetHeader>
-        <SheetFooter>
-          <div
-            className="flex w-full select-none"
-          >
-            <motion.div
-              loading="lazy"
-              className="text-[15vw] w-full text-center !bg-clip-text font-['arial'] text-black bg-gradient-to-b from-[#124d69 from-dark-blue to-[#008aff] tracking-tight max-sm:tracking-normal font-extrabold leading-none"
-            >
-              DIGICROWD
-            </motion.div>
-          </div>
-        </SheetFooter>
       </SheetContent>
     </Sheet>
   );
